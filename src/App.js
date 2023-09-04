@@ -11,22 +11,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 const App = () => {
   return (
     <Router>
-       <div className="App">
-        <Navbar/>
-        <div className="content">
-          <Switch>
-            <Route exact path="/">
-              <Home/>
-            </Route>
-            <Route path="/CreateCourse">
-              <CreateCourse/>
-            </Route>
-            <Route path="/Courses/:id">
-              <CourseDetails/>
-            </Route>
-          </Switch>
-        </div>
-      </div> 
+      
+    <Paysage/>
 
   
     </Router>

@@ -3506,6 +3506,7 @@ const Paysage = () => {
           </svg>
         </div>
       </section>
+      {/* here is the blue sea */}
       <section id="blue">
         <svg
           className="fish fish1"
@@ -3589,7 +3590,7 @@ const Paysage = () => {
             </g>
           </g>
         </svg>
-<Home/>
+<Home/> 
       
         <svg
           className="fish fish2"
