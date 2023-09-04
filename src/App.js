@@ -4,6 +4,8 @@ import Home from './Home';
 import CreateCourse from './course/CreateCourse';
 import CourseDetails from './course/CourseDetails';
 import Paysage  from './paysage';
+import PaysageGame from './paysageGame';
+
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // npx json-server --watch data/db.json --port 8000
@@ -11,23 +13,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 const App = () => {
   return (
     <Router>
-       <div className="App">
-        <Navbar/>
-        <div className="content">
-          <Switch>
-            <Route exact path="/">
-              <Home/>
-            </Route>
-            <Route path="/CreateCourse">
-              <CreateCourse/>
-            </Route>
-            <Route path="/Courses/:id">
-              <CourseDetails/>
-            </Route>
-          </Switch>
-        </div>
-      </div> 
-
+    
+    <PaysageGame></PaysageGame>
   
     </Router>
   );
