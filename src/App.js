@@ -5,6 +5,8 @@ import CreateCourse from './course/CreateCourse';
 import CourseDetails from './course/CourseDetails';
 import Paysage  from './paysage';
 import PaysageGame from './paysageGame';
+import Game from './game';
+
 
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';

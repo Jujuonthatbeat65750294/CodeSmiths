@@ -1,0 +1,112 @@
+/* From root to gameBorder */
+#gameBorder { 
+    width: 1000px;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(20, 66, 99);
+    /* border: 3px solid rgba(14, 48, 72, 0.761); */
+    border-radius:10px;
+  }
+  
+  /* src/App.css */
+  
+  /* Style for the main container */
+  
+  /* App.css */
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #333;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .options-container button {
+    width: 120px;
+  }
+  
+  .message {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  
+  .myaudio {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url('assets/images/Indicator.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    margin-left: 45%;
+  }
+  
+  .objectLabels{
+    color: black;
+    font-weight: bolder;
+  }
+  
+  .Game{
+    color: #007bff00;
+  }
+  
