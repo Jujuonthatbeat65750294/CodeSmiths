@@ -1,4 +1,4 @@
-import CourseList from './course/CoursesList';
+import CourseList from '../course/CoursesList';
 import Paysage from './paysage';
 import useFetch from './useFetch';
 import './index.css';
