@@ -1,8 +1,8 @@
-import CourseList from '../course/CoursesList';
+import CourseList from './course/CoursesList';
 import Paysage from './paysage';
 import useFetch from './useFetch';
-import './index.css';
-import GameSection from './GameSection';
+import '../index.css';
+
 
 const Home = () => {
   const { data: courses, isPending, error } = useFetch('http://localhost:8000/courses');
@@ -30,7 +30,7 @@ const Home = () => {
         {/* Display the Paysage component as a background */}
        
       </div>
-      <GameSection/>
+  
     </div>
   );
 }
