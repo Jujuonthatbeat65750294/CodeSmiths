@@ -1,0 +1,78 @@
+.main_container{
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    /* Poppings */
+    color: #f4f4f4;
+    height: 400px;
+    padding: 6px;
+    align-items: center;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: -100px;
+    text-align: center;
+    
+}
+
+.frame{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    
+}
+
+.button{
+
+    width: 410px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: rgba(80, 163, 219, 0.3);
+    border: none;
+    padding: 6px;
+    margin: 10px 0;
+}
+
+
+ input[type="text"],input[type="password"], input::placeholder{
+
+    color: rgba(255, 255, 255, 0.32);
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2px;
+    text-transform: uppercase;
+        
+         
+}
+
+button.Go{
+
+    color: #E4E4E4;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    width:200px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background:#51A3DB;   
+    border: none;
+    padding: 6px;
+    margin: 10px 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
