@@ -5,6 +5,8 @@ import JourneyPage from './journey/JourneyPage';
 import Course1Page from './journey/courses/Course1Page';
 import GamesPage from './games/GamesPage';
 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 // npx json-server --watch data/db.json --port 8000
 // npm run start
 
