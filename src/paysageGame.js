@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import './index.css'
 import Home from './Home';
 import Game from "./game";
+import ProgressBar from './progressBar.js';
 
 const PaysageGame = () => {
   const handleScroll = (e) => {
@@ -144,10 +145,6 @@ const PaysageGame = () => {
 
 
 <div id="gameBorder"><Game></Game></div>
-
-
-
-
 
 
 </section>

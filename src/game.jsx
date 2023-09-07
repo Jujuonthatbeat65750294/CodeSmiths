@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { styled } from '@mui/material/styles';
+import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
 import './game.css';
-
 
 class Game extends Component {
   constructor(props) {
@@ -33,8 +34,11 @@ class Game extends Component {
       selectedOption: null,
       message: '',
       isPlaying: false,
+      progressStatus: 0,
     };
     this.audio = new Audio();
+
+    
   }
 
   playSound = () => {
@@ -55,7 +59,7 @@ class Game extends Component {
   }
 
   handleOptionClick = (option) => {
-    const { currentRound, rounds, isPlaying } = this.state;
+    const { currentRound, rounds, isPlaying, progressStatus } = this.state;
 
     if (isPlaying || currentRound >= rounds.length) {
       return;
@@ -63,36 +67,58 @@ class Game extends Component {
 
     if (option === rounds[currentRound].correctAnswer) {
       this.setState({ message: 'Congratulations! You got it right!' });
+      this.setState((prevState) => ({ progressStatus: prevState.progressStatus + 50,}));
       this.moveToNextRound();
+      
     } else {
       this.setState({ message: 'Sorry, that\'s not correct. Please try again.' });
     }
   }
 
   moveToNextRound = () => {
-    const { currentRound, rounds } = this.state;
+    const { currentRound, rounds,} = this.state;
     if (currentRound < rounds.length - 1) {
       this.setState((prevState) => ({
         currentRound: prevState.currentRound + 1,
         selectedOption: null,
         message: '',
         isPlaying: false,
+        
       }), () => {
         // After updating the state, play the sound again.
     //   isPlaying: true;
+        this.playSound();
       });
     } else {
       this.setState({ message: 'You finished this phase. Go for next phase' });
+     
+      
       //set button go to next phase
     }
   }
   
 
   render() {
-    const { currentRound, rounds } = this.state;
+    
+    const { currentRound, rounds, progressStatus } = this.state;
+
+    const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+  height: 20,
+  borderRadius: 5,
+  [`&.${linearProgressClasses.colorPrimary}`]: {
+    backgroundColor: theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
+  },
+  [`& .${linearProgressClasses.bar}`]: {
+    borderRadius: 5,
+    backgroundColor: theme.palette.mode === 'light' ? '#1a90ff' : '#308fe8',
+  },
+  }));
+
+
 
     return (
       <div>
+        <div><BorderLinearProgress variant="determinate" value={progressStatus} /></div>
         <div className='Game'>Sound Recognition Game</div>
         <p>Round {currentRound + 1}</p>
         <p>Listen to the sound and choose the correct word:</p>
