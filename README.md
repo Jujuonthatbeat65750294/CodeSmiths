@@ -1,3 +1,17 @@
+# PACKAGE 
+npm install jquery
+npm install sass
+
+# TROUBLESHOOTING
+
+## Conflicting peer dependency
+Delete the node_modules directory in your project.
+
+Clear the npm by running the following commands:
+    npm cache clean --force
+
+Reinstall the dependencies by running npm install or yarn again.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

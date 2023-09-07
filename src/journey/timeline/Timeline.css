@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+
+* {
+  font-family: "Rajdhani", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timeline-body {
+  min-height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTY0NjUwNzQ&ixlib=rb-1.2.1&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-transform: capitalize;
+  /* === ADJUST THE CONTENT below === */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.timeline {
+  width: 85%;
+  position: relative;
+}
+
+.content {
+  background: #eceff1;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 1em;
+  color: black;
+}
+.content h2 {
+  letter-spacing: 2.5px;
+}
+.content p {
+  line-height: 1.4;
+  margin: 10px 0;
+}
+.content a {
+  color: white;
+  background: #5c6bc0;
+  text-decoration: none;
+  padding: 10px 25px;
+  display: inline-block;
+}
+.content a:hover {
+  background: #3f51b5;
+  letter-spacing: 2.5px;
+  transition: all 1s ease-in-out;
+  border-radius: 1em;
+}
+
+/* .content .year {
+  position: absolute;
+  right: 10px;
+  color: grey;
+} */
+
+@media (min-width: 700px) {
+  .content {
+    width: 50%;
+  }
+  .content:nth-child(odd) {
+    float: left;
+    clear: both;
+    transform: translateX(-25px);
+  }
+  .content:nth-child(even) {
+    float: right;
+    clear: both;
+    transform: translateX(25px);
+  }
+  .timeline::before {
+    content: "";
+    width: 2.5px;
+    height: 100%;
+    background: #cfd8dc;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .content::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #ffca28;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -33px;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  .content:nth-child(even)::before {
+    left: -33px;
+  }
+  .content:hover::before {
+    background: #ff6f00;
+  }
+  .content::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #eceff1;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .content:nth-child(even)::after {
+    left: -8px;
+  }
+}
+
+
+::-webkit-scrollbar {
+  display:none;
+}
