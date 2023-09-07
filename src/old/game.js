@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { styled } from '@mui/material/styles';
-import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
 import './game.css';
 
 class Game extends Component {
