@@ -12,16 +12,19 @@ function GameSelection(){
   const games = [
     {
       title: 'Phonics Game',
+      path: '/games/game1',
       imageUrl: 'https://cdn.splashmath.com/curriculum_uploads/images/playables/bucbucs_deep_dive_45.png',
       description: 'Listen and ct phonics',
     },
     {
       title: 'Drag and drop',
+      path: '/games/game2',
       imageUrl: 'https://cdn.splashmath.com/curriculum_uploads/images/playables/case_carnival_3_4.png',
       description: 'Drag and drop letters',
     },
     {
       title: 'Maths game',
+      path: '/games/game3',
       imageUrl: 'https://i5.walmartimages.com/seo/count-ocean-animals-fun-game-kids-Game-2-5-Year-Old-Numbers-From-1-10-Marine-Life-Guessing-Book-For-Preschoolers-Activity-Fun-Puzzles-Find-Animals-An_30995d31-ffa1-4c3f-a8c9-b05b57b30f93.251408d7cd6366bde92fb62edc168dd8.jpeg',
       description: 'Add and substract numbers',
     },
@@ -29,7 +32,7 @@ function GameSelection(){
   ];
 
   return (
-    <div className='game-page'>
+    <div>
     <section className="game-section">
       <h2 className="line-title">trending games</h2>
       <OwlCarousel autoWidth loop className="owl-carousel custom-carousel owl-theme">
@@ -37,6 +40,7 @@ function GameSelection(){
           <GameItem
             key={index}
             title={game.title}
+            path={game.path}
             imageUrl={game.imageUrl}
             description={game.description}
           />

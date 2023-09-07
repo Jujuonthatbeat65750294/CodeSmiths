@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import MainMenu from './screens/MainMenu';
 import JourneyPage from './journey/JourneyPage';
 import Course1Page from './journey/courses/Course1Page';
-import GamesPage from './games/GamesPage';
+import Game1 from './games/game1/game1';
 import GameSelection from './GameSection/GameSelection';
 
 
@@ -24,8 +24,17 @@ function App() {
         <Route exact path="/journey/course1">
           <Course1Page />
         </Route>
-        <Route path="/games">
+        <Route exact path="/games/">
           <GameSelection />
+        </Route>
+        <Route exact path="/games/game1">
+          <Game1 />
+        </Route>
+        <Route exact path="/games/game2">
+          <Game1 />
+        </Route>
+        <Route exact path="/games/game3">
+          <Game1 />
         </Route>
       </Switch>
       </div> 
