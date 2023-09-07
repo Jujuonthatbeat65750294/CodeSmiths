@@ -1,6 +1,14 @@
+.App {
+  background-color: #42a1c6;
+  display: block;
+  padding: 0;
+}
 
   /******* Middle section CSS Start ******/
   /* -------- Landing page ------- */
+  .game-page{
+display: block;
+  }
   .game-section {
     padding: 60px 50px;
   }

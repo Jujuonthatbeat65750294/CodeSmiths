@@ -29,7 +29,7 @@ function GameSelection(){
   ];
 
   return (
-    <div>
+    <div className='game-page'>
     <section className="game-section">
       <h2 className="line-title">trending games</h2>
       <OwlCarousel autoWidth loop className="owl-carousel custom-carousel owl-theme">
