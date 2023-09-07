@@ -1,21 +1,48 @@
 import React from 'react';
-import Paysage from './old/paysage';
-import Home from './old/Home';
-import GameSelection from './GameSection/GameSelection';
-import PaysageGame from './old/paysageGame';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import MainMenu from './screens/MainMenu';
+import JourneyPage from './journey/JourneyPage';
+import Course1Page from './journey/courses/Course1Page';
+import GamesPage from './games/GamesPage';
 
 
 // npx json-server --watch data/db.json --port 8000
 // npm run start
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+      <Switch>
+        <Route exact path="/">
+          <MainMenu></MainMenu>
+        </Route>
+        <Route exact path="/journey">
+          <JourneyPage />
+        </Route>
+        <Route exact path="/journey/course1">
+          <Course1Page />
+        </Route>
+        <Route path="/games">
+          <GamesPage />
+        </Route>
+      </Switch>
+      </div> 
+    </Router>  
+  );
+}
+
+/*
 const App = () => {
   return (
     <Router>
-    
-<PaysageGame/>
- 
+      <div className="App">
+        <PaysageGame>
+        </PaysageGame>
+      </div>
     </Router>
   );
 };
 
+*/
 export default App;

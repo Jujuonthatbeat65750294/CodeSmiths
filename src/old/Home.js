@@ -29,7 +29,7 @@ const Home = () => {
         {/* Display the Paysage component as a background */}
        
       </div>
-  
+      <GameSection/>
     </div>
   );
 }
