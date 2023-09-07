@@ -1,8 +1,7 @@
-import CourseList from './course/CoursesList';
-import Paysage from './paysage';
+import CourseList from '../course/CoursesList';
 import useFetch from './useFetch';
 import '../index.css';
-
+import GameSection from './GameSection';
 
 const Home = () => {
   const { data: courses, isPending, error } = useFetch('http://localhost:8000/courses');

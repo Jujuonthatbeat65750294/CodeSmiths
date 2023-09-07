@@ -91,7 +91,7 @@
     width: 100px;
     height: 50px;
     cursor: pointer;
-    background-image: url('assets/images/Indicator.png');
+    background-image: url('../assets/images/Indicator.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
