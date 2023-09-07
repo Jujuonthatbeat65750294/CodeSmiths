@@ -1,11 +1,4 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Home from './Home';
-import CreateCourse from './course/CreateCourse';
-import CourseDetails from './course/CourseDetails';
-import Paysage  from './paysage';
-import PaysageGame from './paysageGame';
-import Game from './game';
 
 
 
