@@ -1,6 +1,7 @@
 # PACKAGE 
 npm install jquery
 npm install sass
+npm install react-slick slick-carousel
 
 # TROUBLESHOOTING
 

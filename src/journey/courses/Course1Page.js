@@ -7,7 +7,7 @@ function Course1Page() {
 
     const history = useHistory();
     const handlePlayButtonClick = () => {
-        navigateToRoute(history, '/journey/course1');
+        navigateToRoute(history, '/main-menu/journey/course1');
     };
 
   return (
