@@ -11,8 +11,11 @@ function Login() {
     <div className="main_container">
         <div className="title"> Welcome to Jolly Phonics</div>
         <div className="frame">
-            <Field type="text" id="username" name="username" placeholder="Username"></Field>
-            <Field type="password" id="password" name="password" placeholder="Passsword" ></Field>
+            {/* Action.php */}
+            <form>
+                <Field type="text" id="username" name="username" placeholder="Username"></Field>
+                <Field type="password" id="password" name="password" placeholder="Passsword" ></Field>
+            </form>
             <button type="submit" className="Go" onClick={GoClick}>Let's Go</button>
         </div>
         

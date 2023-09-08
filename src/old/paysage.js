@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import './index.css'
+import '../index.css'
 import Home from './Home';
 
 const Paysage = () => {

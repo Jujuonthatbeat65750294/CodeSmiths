@@ -1,4 +1,4 @@
-import CourseList from '../course/CoursesList';
+import CourseList from './course/CoursesList';
 import useFetch from './useFetch';
 import '../index.css';
 import GameSection from './GameSection';
