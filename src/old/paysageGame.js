@@ -59,7 +59,7 @@ const PaysageGame = () => {
   return (
 <div>
 
-<section id="blue">
+<section id="blue" style={{ backgroundColor:'lightblue' }}>
 <svg
   className="fish fish1"
   xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +148,7 @@ const PaysageGame = () => {
 {/* Games */}
 
 
-<div id="gameBorder"><Game>
+<div id="gameBorder" style={{ backgroundColor:'lightblue',  }} ><Game>
   </Game></div>
   <div className="bubbles bubble-1"></div>
           <div className="bubbles bubble-2"></div>
