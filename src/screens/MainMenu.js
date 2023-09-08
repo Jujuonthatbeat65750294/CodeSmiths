@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const MainMenu = () => {
+const MainMenu = ({children}) => {
     return ( 
         <div className="main-menu-content">
             <div className="top-menu-bar">
@@ -10,7 +10,20 @@ const MainMenu = () => {
             <h2>Continue Journey</h2>
             <div className="continue-contents">
                 <div id="course1">
-                    <h1></h1>
+                    <div id="1">
+                        <img src="../../assets/img/courses/course_1/introduction.png"  
+                        
+                            style={{
+                                width:'75%', 
+                                height:'75%',
+                                marginTop:'10px', 
+                                borderRadius:'20px',
+                                
+                                }} alt="Introduction" />
+
+                        <h2 style={{ margin:'-10px'}}>Introduction</h2>
+                    </div>
+
                 </div>
             </div>
             <div className="bottom-nav">

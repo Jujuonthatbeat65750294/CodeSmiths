@@ -16,13 +16,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <AudioManager audioFile="../assets/audio/bg_music/BG_2-Underwater Mermaid Castle.mp3" volume={0.2} />
+      {/* <AudioManager audioFile="../assets/audio/bg_music/BG_2-Underwater Mermaid Castle.mp3" volume={0.2} /> */}
       <Switch>
         <Route exact path="/">
           <LoginBackground></LoginBackground>
         </Route>
         <Route exact path="/main-menu">
-          <MainMenu></MainMenu>
+          <MainMenu>
+          </MainMenu>
         </Route>
         <Route exact path="/main-menu/journey">
           <JourneyPage />
