@@ -21,7 +21,7 @@ const MainMenu = ({children}) => {
                                 
                                 }} alt="Introduction" />
 
-                        <h2 style={{ margin:'-10px'}}>Introduction</h2>
+                        <h2 style={{ margin:'-10px', color:'white'}}>Introduction</h2>
                     </div>
 
                 </div>

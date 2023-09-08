@@ -6,6 +6,7 @@ import images from '../utils/WordList';
 import LetterButtons from '../components/LetterButtons';
 import useImageQuiz from '../hooks/useImageQuiz';
 import ProgressBar from '../components/ProgressBar';
+import BackButton from '../components/BackButton';
 
 
 
@@ -63,18 +64,25 @@ function Phase_Guess_First_Letter() {
 
   // Render the main app content
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="gameGuessContainer">
+      <BackButton/>
+      <div className="App-header" style={{
+        display:'flex',
+        flexDirection: 'column',
+        width:'100%',
+        justifyContent: 'center',
+
+      }}>
         <AudioManager audioFile="../../assets/audio/background-music.mp3" volume={0.05} />
-        <p onClick={playAudio}>What is the first letter of this word?</p>
+        <p onClick={playAudio} style={{textAlign:'center'}}>What is the first letter of this word?</p>
         <audio src="../../assets/audio/question.mp3" autoPlay />
 
-        <img src={`../../assets/img/words_images/${images[currentImageIndex].image}`} alt={images[currentImageIndex].word} onClick={() => playSound(images[currentImageIndex].sound)} />
+        <img className='guessGameImage' src={`../../assets/img/words_images/${images[currentImageIndex].image}`} alt={images[currentImageIndex].word} onClick={() => playSound(images[currentImageIndex].sound)} />
         
         <LetterButtons letters={groupLetters} onLetterClick={handleLetterClick} playAudio={playSound}/>
 
         <ProgressBar progress={progress} total={totalImages} />
-      </header>
+      </div>
     </div>
   );
 }
