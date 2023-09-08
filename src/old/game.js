@@ -40,6 +40,9 @@ class Game extends Component {
     
   }
 
+
+  
+
   playSound = () => {
     const { rounds, currentRound, isPlaying } = this.state;
 
@@ -68,9 +71,14 @@ class Game extends Component {
       this.setState({ message: 'Congratulations! You got it right!' });
       this.setState((prevState) => ({ progressStatus: prevState.progressStatus + 50,}));
       this.moveToNextRound();
-      
+      const winAudio = new Audio('../../../assets/audio/correct.mp3');
+      const volume = 0.8;
+      winAudio.volume = volume;
+      winAudio.play();
     } else {
-      this.setState({ message: 'Sorry, that\'s not correct. Please try again.' });
+      this.setState({ message: 'Sorry, that\'s not correct. Please try again.'
+           
+     });
     }
   }
 
@@ -117,10 +125,13 @@ class Game extends Component {
 
 
     return (
-      <div style={{ height:'640px',backgroundColor:'lightblue',  backgroundImage: 'url("/dolphin.png")', // Replace 'path/to/your/image.jpg' with the actual path to your background image
+      <div style={{ backgroundColor:'lightblue',  backgroundImage: 'url("/dolphin.png")', // Replace 'path/to/your/image.jpg' with the actual path to your background image
       backgroundSize: 'contain', // Adjust the background size as needed
       backgroundRepeat: 'no-repeat', // Prevent background image from repeating
-      backgroundPosition: 'center '  }}>
+      backgroundPosition: 'center ' ,
+      padding: '122px 110px 25px 123px',
+      boxSizing: 'border-box',
+      maxWidth: '900px', width:'100%' }}>
       
       
       
@@ -132,7 +143,7 @@ class Game extends Component {
         
       
         <p>Round {currentRound + 1}</p>
-        <p>Listen to the sound and choose the correct word:</p>
+        <img src="/listen.png" className="title1" />
 
         <div className='myaudio' onClick={this.playSound}>
           <audio className='myaudio' ref={this.audioRef} src={rounds[currentRound].soundUrl} />

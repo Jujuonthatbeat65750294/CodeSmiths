@@ -572,3 +572,7 @@ svg .fish2 {
   
   /******* Middle section CSS Start ******/
   /* -------- Landing page ------- */
+  .title1{
+    height:60px;
+    width: 100%;
+  }
