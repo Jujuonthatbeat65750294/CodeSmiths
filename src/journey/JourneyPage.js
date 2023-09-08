@@ -20,22 +20,6 @@ function JourneyPage() {
                 <div className="course" onClick={() => handlePlayButtonClick('/main-menu/journey/course1')}>
                     <img src="../assets/img/courses/Phonics.jpg" alt="Learn to read and write with phonics" />
                 </div>
-                <div className="course" onClick={() => handlePlayButtonClick('/main-menu/journey/course1')}>
-                    <img src="../assets/img/courses/Phonics.jpg" alt="Learn to read and write with phonics" />
-                </div>
-                <div className="course" onClick={() => handlePlayButtonClick('/main-menu/journey/course1')}>
-                    <img src="../assets/img/courses/Phonics.jpg" alt="Learn to read and write with phonics" />
-                </div>
-                <div className="course" onClick={() => handlePlayButtonClick('/main-menu/journey/course1')}>
-                    <img src="../assets/img/courses/Phonics.jpg" alt="Learn to read and write with phonics" />
-                </div>
-                <div className="course" onClick={() => handlePlayButtonClick('/main-menu/journey/course1')}>
-                    <img src="../assets/img/courses/Phonics.jpg" alt="Learn to read and write with phonics" />
-                </div>
-                <div className="course" onClick={() => handlePlayButtonClick('/main-menu/journey/course1')}>
-                    <img src="../assets/img/courses/Phonics.jpg" alt="Learn to read and write with phonics" />
-                </div>
-                
             </div>
         </div>
     );
