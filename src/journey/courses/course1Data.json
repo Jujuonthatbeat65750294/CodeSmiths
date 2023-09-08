@@ -1,0 +1,138 @@
+{
+    "levels": [
+      {
+        "id": 1,
+        "name": "Group 1 - S A T I P N",
+        "status": "incomplete",
+        "phases": [
+          {
+            "id": 1,
+            "name": "Introduction",
+            "status": "unlock",
+            "image": "../../assets/img/courses/course_1/introduction.png"
+          },
+          {
+            "id": 2,
+            "name": "Sound of S and A",
+            "status": "unlock",
+            "image": "../../assets/img/courses/course_1/learn.png"
+          },
+          {
+            "id": 3,
+            "name": "Practice S and A",
+            "status": "unlock",
+            "image": "../../assets/img/courses/course_1/practice.png"
+          },
+          {
+            "id": 4,
+            "name": "Sound of T and I",
+            "status": "unlock",
+            "image": "../../assets/img/courses/course_1/learn.png"
+          },
+          {
+            "id": 5,
+            "name": "Practice T and I",
+            "status": "unlock",
+            "image": "../../assets/img/courses/course_1/practice.png"
+          },
+          {
+            "id": 6,
+            "name": "Review S A T I",
+            "status": "unlock",
+            "image": "../../assets/img/courses/course_1/review.png"
+          },
+          {
+            "id": 7,
+            "name": "Sound of P and N",
+            "status": "unlock",
+            "image": "../../assets/img/courses/course_1/learn.png"
+          },
+          {
+            "id": 8,
+            "name": "Practice P and N",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/practice.png"
+          },
+          {
+            "id": 9,
+            "name": "Review S A T I P N",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/review.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Group 2 - C K E H R D M",
+        "status": "lock",
+        "phases": [
+          {
+            "id": 10,
+            "name": "Sound of C and K",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/learn.png"
+          },
+          {
+            "id": 11,
+            "name": "Practice C and K",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/practice.png"
+          },
+          {
+            "id": 12,
+            "name": "Sound of E and H",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/learn.png"
+          },
+          {
+            "id": 13,
+            "name": "Practice E and H",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/practice.png"
+          },
+          {
+            "id": 14,
+            "name": "Review C K E H",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/review.png"
+          },
+          {
+            "id": 15,
+            "name": "Sound of R and D",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/learn.png"
+          },
+          {
+            "id": 16,
+            "name": "Practice R and D",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/practice.png"
+          },
+          {
+            "id": 17,
+            "name": "Review C K E H R D",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/review.png"
+          },
+          {
+            "id": 18,
+            "name": "Sound of M",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/learn.png"
+          },
+          {
+            "id": 19,
+            "name": "Practice M",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/practice.png"
+          },
+          {
+            "id": 20,
+            "name": "Review C K E H R D M",
+            "status": "lock",
+            "image": "../../assets/img/courses/course_1/review.png"
+          }
+        ]
+      }
+    ]
+  }

@@ -4,6 +4,7 @@ import AudioManager from './utils/AudioManager';
 import MainMenu from './screens/MainMenu';
 import JourneyPage from './journey/JourneyPage';
 import Course1Page from './journey/courses/Course1Page';
+import Introduction from './journey/courses/phases/introduction';
 import Game1 from './games/game1/game1';
 import Phase_Guess_First_Letter from './journey/Phase_Guess_First_Letter';
 import GameSelection from './GameSection/GameSelection';
@@ -18,19 +19,23 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <AudioManager audioFile="../assets/audio/bg_music/BG_2-Underwater Mermaid Castle.mp3" volume={0.2} />
+      {/* <AudioManager audioFile="../assets/audio/bg_music/BG_2-Underwater Mermaid Castle.mp3" volume={0.2} /> */}
       <Switch>
         <Route exact path="/">
           <LoginBackground></LoginBackground>
         </Route>
         <Route exact path="/main-menu">
-          <MainMenu></MainMenu>
+          <MainMenu>
+          </MainMenu>
         </Route>
         <Route exact path="/main-menu/journey">
           <JourneyPage />
         </Route>
         <Route exact path="/main-menu/journey/course1">
           <Course1Page />
+        </Route>
+        <Route exact path="/main-menu/journey/course1/introduction">
+          <Introduction />
         </Route>
         <Route exact path="/main-menu/games/">
           <GameSelection />

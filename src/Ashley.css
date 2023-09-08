@@ -25,7 +25,7 @@ code {
   padding: 0 100px;
   display: flex;
   flex-direction: column;
-  background-color: #42a1c6; /*#282c34*/
+  background-color: #2C86C7; /*#282c34 -- #2C86C7* -- #1365A6*/  /* Change to slightly darker blue */
   max-width: 100%;
   height: 100vh;
   justify-content: center;
@@ -41,18 +41,49 @@ code {
   height: 80px;
 }
 .profile , .setting{
-  background-color: aquamarine;
+  background-color: #d2dae7;
   width: 80px;
   height: 80px;
-  border-radius: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  border: 2px solid #2675adab;
+}
+
+.profileImgUsername{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.profile img{
+  width:70%;
+  height: 70%;
+}
+
+.profile .username{
+  padding: 2px;
   text-align: center;
+  
 }
 
  .main-menu-content h2 {
   text-align: center;
   padding: 0;
   margin: 0 0 20px 0;
+  color: #FBC73A;
  }
+
+ .main-menu-content h2.maintitle {
+  text-align: center;
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: #FBC73A;
+  font-size: 50px;
+ }
+
  .continue-contents {
   display: flex;
   flex-direction: row;
@@ -70,10 +101,9 @@ code {
   border-radius: 8px;
   min-width: 700px;
   max-width: 750px;
-  background-color: #282c34;
+  background-color: #282c3400; 
   text-align: center;
 }
-
 
 .journey-container {
   position: absolute;
@@ -183,7 +213,7 @@ code {
   text-align: center; 
 } 
 
-.header-bar h1,h2 {
+.header-bar h1 {
   color: #F4F4F4;
 }
 .level h2 {
@@ -217,6 +247,7 @@ code {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: #282c3469 0px 14px 20px 5px;
 }
 .phase h2 {
   position: absolute;
@@ -251,12 +282,34 @@ code {
   filter: grayscale(100%);
 }
 
+/* Introduction page*/
+
+#introduction-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+}
+#introduction-page-container video {
+  max-width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
 /* exercise*/
 img {
   height: 400px;
 }
 
-.buttonContainer {
+.gameGuessContainer .guessGameImage{
+  width:20%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin-left: 40vw
+}
+
+.gameGuessContainer .buttonContainer {
   display: flex;
   justify-content: center;
 }
@@ -306,11 +359,13 @@ button:hover {
 
 .progress-bar {
   margin-top: 20px;
-  width: 100%;
+  margin-left: 15vw;
+  width: 70%;
   height: 20px;
   background-color: #f2f2f2;
   border-radius: 10px;
   overflow: hidden;
+  
 }
 
 .progress {
