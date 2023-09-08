@@ -1,6 +1,7 @@
 import CourseList from './course/CoursesList';
 import useFetch from './useFetch';
 import '../index.css';
+import GameSelection from '../GameSection/GameSelection';
 
 
 const Home = () => {
@@ -29,7 +30,7 @@ const Home = () => {
         {/* Display the Paysage component as a background */}
        
       </div>
-      <GameSection/>
+      <GameSelection/>
     </div>
   );
 }
