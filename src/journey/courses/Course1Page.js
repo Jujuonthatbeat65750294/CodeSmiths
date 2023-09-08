@@ -18,17 +18,17 @@ function Course1Page() {
         </div>
         <div className="contents">
             <div className="phase">
-                <img src="../img/courses/course_1/introduction.png" alt="Introduction" />
+                <img src="../../assets/img/courses/course_1/introduction.png" alt="Introduction" />
                 <h2>Introduction</h2>
                 <div className="play-button" onClick={handlePlayButtonClick} ></div>
             </div>
             <div className="phase lock" >
-                <img src="../img/courses/course_1/introduction.png" alt="Sound of S and A" />
+                <img src="../../assets/img/courses/course_1/introduction.png" alt="Sound of S and A" />
                 <h2>S & A</h2>
                 <div className="play-button" onClick={handlePlayButtonClick} ></div>
             </div>
             <div className="phase lock">
-                <img src="../img/courses/course_1/introduction.png" alt="Practice S & A" />
+                <img src="../../assets/img/courses/course_1/introduction.png" alt="Practice S & A" />
                 <h2>Practice S & A</h2>
                 <div className="play-button" onClick={handlePlayButtonClick} ></div>
             </div>

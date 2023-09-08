@@ -17,7 +17,7 @@ const MainMenu = () => {
                 <div className="journey-container">
                     <Link to="/main-menu/journey">
                         <div className="image-container">
-                            <img src="../img/journey.jpg" alt="Journey" className="image" />
+                            <img src="../assets/img/journey.jpg" alt="Journey" className="image" />
                             <h2>Journey</h2>
                         </div>
                     </Link> 
@@ -25,7 +25,7 @@ const MainMenu = () => {
                 <div className="games-container">
                     <Link to="/main-menu/games">
                         <div className="image-container">
-                            <img src="../img/games.jpg" alt="Games" className="image" />
+                            <img src="../assets/img/games.jpg" alt="Games" className="image" />
                             <h2>Games</h2>
                         </div>
                     </Link>
