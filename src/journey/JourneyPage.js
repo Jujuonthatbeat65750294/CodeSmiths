@@ -6,8 +6,8 @@ import navigateToRoute from '../utils/navigation';
 function JourneyPage() {
 
     const history = useHistory();
-    const handlePlayButtonClick = () => {
-        navigateToRoute(history, '/journey/course1');
+    const handlePlayButtonClick = (path) => {
+        navigateToRoute(history, path);
     };
     return(
         <div id='journey-page-container'>
@@ -16,7 +16,7 @@ function JourneyPage() {
                 <h2>Journey Page</h2>
             </div>
             <div className="contents">
-                <div className="course" onClick={handlePlayButtonClick}>
+                <div className="course" onClick={() => handlePlayButtonClick('/journey/course1')}>
                     <img src="../img/courses/Phonics.jpg" alt="Learn to read and write with phonics" />
                 </div>
                 
