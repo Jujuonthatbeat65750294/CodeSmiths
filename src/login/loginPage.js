@@ -23,8 +23,6 @@ function Login() {
             </form>
                 <button type="submit" className="LetsGo" onClick={handlePlayButtonClick}>Let's Go</button>
         </div>
-        
-
      
     </div>
   );
