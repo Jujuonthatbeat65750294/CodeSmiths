@@ -38,7 +38,7 @@ function GameSelection(){
   return (
     <div>
     <section className="game-section">
-      <h2 className="line-title">trending games</h2>
+      <h2 className="title">trending games</h2>
       <OwlCarousel autoWidth loop className="owl-carousel custom-carousel owl-theme">
         {games.map((game, index) => (
           <GameItem

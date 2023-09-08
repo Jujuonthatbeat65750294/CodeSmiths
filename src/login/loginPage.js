@@ -14,7 +14,7 @@ function Login() {
 
   return (
     <div className="main_container">
-        <div className="title"> Welcome to Jolly Phonics</div>
+        <div className="logintitle"> Welcome to Jolly Phonics</div>
         <div className="frame">
             {/* Action.php */}
             <form>
