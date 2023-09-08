@@ -7,6 +7,7 @@ import Course1Page from './journey/courses/Course1Page';
 import Game1 from './games/game1/game1';
 import Phase_Guess_First_Letter from './journey/Phase_Guess_First_Letter';
 import GameSelection from './GameSection/GameSelection';
+import PaysageGame from '../src/old/paysageGame';
 //import LoginBackground from './login/loginBackground';
 
 
@@ -37,6 +38,7 @@ function App() {
           <Phase_Guess_First_Letter />
         </Route>
         <Route exact path="/main-menu/games/game2">
+          <PaysageGame/>
           <Game1 />
         </Route>
         <Route exact path="/main-menu/games/game3">
