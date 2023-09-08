@@ -251,6 +251,20 @@ code {
   filter: grayscale(100%);
 }
 
+/* Introduction page*/
+
+#introduction-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+}
+#introduction-page-container video {
+  max-width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
 /* exercise*/
 img {
   height: 400px;

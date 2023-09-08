@@ -7,7 +7,7 @@ function Course1Page() {
 
     const history = useHistory();
     const handlePlayButtonClick = () => {
-        navigateToRoute(history, '/main-menu/journey/course1');
+        navigateToRoute(history, '/main-menu/journey/course1/introduction');
     };
 
   return (
@@ -25,7 +25,7 @@ function Course1Page() {
                         <h2>Introduction</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
                     </div>
-                    <div className="phase unlock" >
+                    <div className="phase lock" >
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Sound of S and A" />
                         <h2>S & A</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
