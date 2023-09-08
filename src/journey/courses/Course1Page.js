@@ -57,7 +57,7 @@ function Course1Page() {
                   <div
                     className="play-button"
                     onClick={() =>
-                      handlePlayButtonClick(`/main-menu/journey/course1/${phase.id}`)
+                      handlePlayButtonClick(`/main-menu/journey/course1/${phase.content}`)
                     }
                   ></div>
                 </div>
