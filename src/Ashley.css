@@ -41,19 +41,49 @@ code {
   height: 80px;
 }
 .profile , .setting{
-  background-color: aquamarine;
+  background-color: #d2dae7;
   width: 80px;
   height: 80px;
-  border-radius: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  border: 2px solid #2675adab;
+}
+
+.profileImgUsername{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.profile img{
+  width:70%;
+  height: 70%;
+}
+
+.profile .username{
+  padding: 2px;
   text-align: center;
+  
 }
 
  .main-menu-content h2 {
   text-align: center;
   padding: 0;
   margin: 0 0 20px 0;
-  color: #F58532;
+  color: #FBC73A;
  }
+
+ .main-menu-content h2.maintitle {
+  text-align: center;
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: #FBC73A;
+  font-size: 50px;
+ }
+
  .continue-contents {
   display: flex;
   flex-direction: row;
@@ -217,6 +247,7 @@ code {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: #282c3469 0px 14px 20px 5px;
 }
 .phase h2 {
   position: absolute;

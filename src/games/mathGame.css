@@ -1,0 +1,225 @@
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+  section {
+    position: relative;
+    overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  body {
+      background: linear-gradient(60deg, #420285, #08BDBD);;
+  }
+  
+  .title {
+      text-transform: capitalize;
+      padding-bottom: 30px;
+      color: greenyellow;
+      font-size: 2rem;
+      z-index: 1;
+      width: 600px;
+      height: auto;
+      animation: breathe 2s linear infinite;
+  }
+  
+  .centerdiv {
+      position: relative;
+      width: 500px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: url(https://i.pinimg.com/originals/b5/aa/fd/b5aafd61909e8d76fb2305114befc783.png);
+      background-repeat: no-repeat;
+      background-size: contain;;
+  }
+  
+  .insertBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+  }
+  
+  #v1,
+  #v2 {
+      color: black;
+      text-align: center;
+      padding: 30px 30px;
+      width: 35px;
+      font-size: 42px;
+      border: none;
+      background: transparent;
+      border-radius: 100%;
+  }
+  
+  .Box1 p {
+      font-size: 60px;
+      margin: 0 10px 0 10px;
+      font-weight: bolder;
+      color: red;
+  }
+  .middlebox{
+    margin: 0 0 20px 0;
+  }
+  .middlebox #answ {
+      padding: 5px 0;
+      text-align: center;
+      color: white;
+      width: 180px;
+      height: 40px;
+      font-size: 30px;
+      background: transparent;
+      border-radius: 15px;
+      border: 4px solid black;
+  }
+  
+  .maths.streaks{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px 35px;
+    margin: 30px 30px 0 0;
+    border-radius: 20px;
+    background: url(https://static.vecteezy.com/system/resources/previews/008/503/145/non_2x/rock-stones-and-boulders-in-cartoon-style-free-png.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+  }
+  .maths.streaks span{
+    width: 40px;
+    text-align: right;
+  }
+  .fa-solid.fa-volume-high{
+    position: absolute;
+    top: 50px;
+    right: 90px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+  }
+  .starfish{
+    position: absolute;
+    top: auto;
+    left: -10px;
+    height: 50px;
+  }
+  @keyframes breathe{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+  }
+  .checkAnswer {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+   }
+   
+   .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+   }
+   
+   .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+       to left,
+       hsl(340deg 100% 16%) 0%,
+       hsl(340deg 100% 32%) 8%,
+       hsl(340deg 100% 32%) 92%,
+       hsl(340deg 100% 16%) 100%
+     );
+   }
+   
+   .front {
+    display: block;
+    position: relative;
+    padding: 12px 33px;
+    border-radius: 12px;
+    font-size: 32px;
+    color: white;
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(-9px);
+    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+   }
+   
+   .checkAnswer:hover {
+    filter: brightness(110%);
+}
+button.checkAnswer{
+    background-color: transparent;
+    
+   }
+   
+   .checkAnswer:hover .front {
+    transform: translateY(-6px);
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+   }
+   
+   .checkAnswer:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+   }
+   
+   .checkAnswer:hover .shadow {
+    transform: translateY(4px);
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+   }
+   
+   .checkAnswer:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+   }
+   
+   .checkAnswer:focus:not(:focus-visible) {
+    outline: none;
+   }

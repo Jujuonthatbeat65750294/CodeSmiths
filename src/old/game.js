@@ -19,8 +19,8 @@ class Game extends Component {
         {
           soundUrl: 'https://www.soundcityreading.net/uploads/3/7/6/1/37611941/alphasounds-t.mp3',
           options: [
-            { label: 'Dog', imageUrl: 'https://static.vecteezy.com/system/resources/previews/004/987/864/original/cute-beagle-cartoon-happy-cartoon-puppy-sitting-beagle-puppy-free-vector.jpg' },
-            { label: 'Bird', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhF09iAX0VWm7VAEXkmrs27orb-ITBhZYPwVOnnPpB&sg' },
+            { label: 'Dog', imageUrl: 'https://static.vecteezy.com/system/resources/previews/016/460/489/original/cartoon-dog-child-isolated-on-transparent-background-free-png.png'},
+            { label: 'Bird', imageUrl: 'https://e7.pngegg.com/pngimages/924/289/png-clipart-cartoon-bird-cartoon-white-seagull-cartoon-character-comics.png' },
             { label: 'Apple', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxxZwA7LHgZtw6QwH4yIeDpG7k_jmxIjNYlLjN5ms&s' },
           ],
           correctAnswer: 'Bird',
@@ -117,7 +117,8 @@ class Game extends Component {
 
 
     return (
-      <div>
+      <div style={{ backgroundColor:'lightblue', // Set the width to 100% to make sure it fills its parent container
+    }}  >
         
         <div className='Game'>Sound Recognition Game</div>
         

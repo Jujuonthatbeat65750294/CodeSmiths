@@ -10,6 +10,8 @@ import Game1 from './games/game1/game1';
 import Phase_Guess_First_Letter from './journey/Phase_Guess_First_Letter';
 import GameSelection from './GameSection/GameSelection';
 import LoginBackground from './login/loginBackground';
+import PaysageGame from './old/paysageGame';
+import MathAdditionGame from './games/MathAdditionGame';
 
 // npx json-server --watch data/db.json --port 8000
 // npm run start
@@ -46,10 +48,10 @@ function App() {
           <Phase_Guess_First_Letter />
         </Route>
         <Route exact path="/main-menu/games/game2">
-          <Game1 />
+    <PaysageGame/>
         </Route>
         <Route exact path="/main-menu/games/game3">
-          <Game1 />
+          <MathAdditionGame/>
         </Route>
       </Switch>
       </div> 

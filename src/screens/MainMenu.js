@@ -4,10 +4,14 @@ const MainMenu = ({children}) => {
     return ( 
         <div className="main-menu-content">
             <div className="top-menu-bar">
-                <div className="profile">1</div>
+                <div className="profileImgUsername"> <div className="profile">
+                    <img src='../../assets/img/menu/fish_64.png'/>
+                </div>
+                <div className='username'>My Name</div>
+                </div>
                 <div className="setting"></div>
             </div>
-            <h2>Continue Journey</h2>
+            <h2 className='maintitle'>Continue Journey</h2>
             <div className="continue-contents">
                 <div id="course1">
                     <div id="1">
