@@ -5,8 +5,10 @@ import MainMenu from './screens/MainMenu';
 import JourneyPage from './journey/JourneyPage';
 import Course1Page from './journey/courses/Course1Page';
 import Game1 from './games/game1/game1';
+import Phase_Guess_First_Letter from './journey/Phase_Guess_First_Letter';
 import GameSelection from './GameSection/GameSelection';
 import LoginBackground from './login/loginBackground';
+
 
 
 // npx json-server --watch data/db.json --port 8000
@@ -33,7 +35,7 @@ function App() {
     <Router>
       <div className="App">
       <Switch>
-      <Route exact path="/">
+        <Route exact path="/">
           <Login></Login>
         </Route>
         <Route exact path="/main-menu">
@@ -49,7 +51,7 @@ function App() {
           <GameSelection />
         </Route>
         <Route exact path="/main-menu/games/game1">
-          <Game1 />
+          <Phase_Guess_First_Letter />
         </Route>
         <Route exact path="/main-menu/games/game2">
           <Game1 />
