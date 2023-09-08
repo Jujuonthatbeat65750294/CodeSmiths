@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import '../index.css'
 import Home from './Home';
 
-const Paysage = () => {
+const Paysage = ({children}) => {
   const handleScroll = (e) => {
     const topScroll = window.scrollY;
     const layers = document.querySelectorAll('[data-type="parallax"]');
@@ -3590,7 +3590,7 @@ const Paysage = () => {
             </g>
           </g>
         </svg>
-<Home/> 
+     {children}
       
         <svg
           className="fish fish2"
