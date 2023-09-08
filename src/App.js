@@ -9,8 +9,6 @@ import Phase_Guess_First_Letter from './journey/Phase_Guess_First_Letter';
 import GameSelection from './GameSection/GameSelection';
 import LoginBackground from './login/loginBackground';
 
-
-
 // npx json-server --watch data/db.json --port 8000
 // npm run start
 

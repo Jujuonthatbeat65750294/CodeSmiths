@@ -1,7 +1,7 @@
 
 
 #parallax {
-  height: 150vh;
+  
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -36,7 +36,7 @@ section#topper {
     width: 100%;
     position: relative;
     padding-top: 20px;
-    height: 100vh; }
+     }
     section#topper .landscape-container .sky svg {
       top: 0; }
     section#topper .landscape-container .mountains-pink svg {
