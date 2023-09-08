@@ -1,10 +1,10 @@
 import React from 'react';
-import videoFile from '../Letter_S.mp4';
+import videoFile from '../Introduction.mp4';
 
 function IntroductionPage() {
 
   return (
-    <div id='introduction-page-container'>
+    <div id='phase-page-container'>
       <video src={videoFile} controls ></video>
     </div>
   );

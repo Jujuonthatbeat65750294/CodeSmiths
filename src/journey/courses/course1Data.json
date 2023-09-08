@@ -7,54 +7,63 @@
         "phases": [
           {
             "id": 1,
+            "content": "introduction",
             "name": "Introduction",
             "status": "unlock",
             "image": "../../assets/img/courses/course_1/introduction.png"
           },
           {
             "id": 2,
+            "content": "sound-of-s-and-a",
             "name": "Sound of S and A",
             "status": "unlock",
             "image": "../../assets/img/courses/course_1/learn.png"
           },
           {
             "id": 3,
+            "content": "introduction",
             "name": "Practice S and A",
             "status": "unlock",
             "image": "../../assets/img/courses/course_1/practice.png"
           },
           {
             "id": 4,
+            "content": "sound-of-s-and-a",
             "name": "Sound of T and I",
             "status": "unlock",
             "image": "../../assets/img/courses/course_1/learn.png"
           },
           {
             "id": 5,
+            "content": "introduction",
             "name": "Practice T and I",
             "status": "unlock",
             "image": "../../assets/img/courses/course_1/practice.png"
           },
           {
             "id": 6,
+            "content": "introduction",
             "name": "Review S A T I",
             "status": "unlock",
             "image": "../../assets/img/courses/course_1/review.png"
           },
           {
             "id": 7,
+            "content": "sound-of-s-and-a",
             "name": "Sound of P and N",
             "status": "unlock",
             "image": "../../assets/img/courses/course_1/learn.png"
           },
           {
             "id": 8,
+            "content": "introduction",
             "name": "Practice P and N",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/practice.png"
           },
           {
             "id": 9,
+            "content": "introduction",
             "name": "Review S A T I P N",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/review.png"
@@ -68,66 +77,77 @@
         "phases": [
           {
             "id": 10,
+            "content": "sound-of-s-and-a",
             "name": "Sound of C and K",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/learn.png"
           },
           {
             "id": 11,
+            "content": "introduction",
             "name": "Practice C and K",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/practice.png"
           },
           {
             "id": 12,
+            "content": "sound-of-s-and-a",
             "name": "Sound of E and H",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/learn.png"
           },
           {
             "id": 13,
+            "content": "introduction",
             "name": "Practice E and H",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/practice.png"
           },
           {
             "id": 14,
+            "content": "introduction",
             "name": "Review C K E H",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/review.png"
           },
           {
             "id": 15,
+            "content": "sound-of-s-and-a",
             "name": "Sound of R and D",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/learn.png"
           },
           {
             "id": 16,
+            "content": "introduction",
             "name": "Practice R and D",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/practice.png"
           },
           {
             "id": 17,
+            "content": "introduction",
             "name": "Review C K E H R D",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/review.png"
           },
           {
             "id": 18,
+            "content": "sound-of-s-and-a",
             "name": "Sound of M",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/learn.png"
           },
           {
             "id": 19,
+            "content": "introduction",
             "name": "Practice M",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/practice.png"
           },
           {
             "id": 20,
+            "content": "sound-of-s-and-a",
             "name": "Review C K E H R D M",
             "status": "lock",
             "image": "../../assets/img/courses/course_1/review.png"

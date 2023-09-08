@@ -5,6 +5,7 @@ import MainMenu from './screens/MainMenu';
 import JourneyPage from './journey/JourneyPage';
 import Course1Page from './journey/courses/Course1Page';
 import Introduction from './journey/courses/phases/introduction';
+import SoundOfSAndAPage from './journey/courses/phases/sound_of_s_and_a';
 import Game1 from './games/game1/game1';
 import Phase_Guess_First_Letter from './journey/Phase_Guess_First_Letter';
 import GameSelection from './GameSection/GameSelection';
@@ -34,6 +35,9 @@ function App() {
         </Route>
         <Route exact path="/main-menu/journey/course1/introduction">
           <Introduction />
+        </Route>
+        <Route exact path="/main-menu/journey/course1/sound-of-s-and-a">
+          <SoundOfSAndAPage />
         </Route>
         <Route exact path="/main-menu/games/">
           <GameSelection />
