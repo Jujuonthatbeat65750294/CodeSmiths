@@ -39,7 +39,6 @@ function App() {
           <Phase_Guess_First_Letter />
         </Route>
         <Route exact path="/main-menu/games/game2">
-          <PaysageGame/>
           <Game1 />
         </Route>
         <Route exact path="/main-menu/games/game3">
