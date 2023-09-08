@@ -17,7 +17,7 @@ function JourneyPage() {
             </div>
             <div className="contents">
                 <div className="course" onClick={() => handlePlayButtonClick('/main-menu/journey/course1')}>
-                    <img src="../img/courses/Phonics.jpg" alt="Learn to read and write with phonics" />
+                    <img src="../assets/img/courses/Phonics.jpg" alt="Learn to read and write with phonics" />
                 </div>
                 
             </div>
