@@ -1,12 +1,16 @@
 import React from 'react';
 import Field from './components/field';
 import "./loginCss/login.css";
-import { Link } from 'react-router-dom/cjs/react-router-dom';
+import { useHistory } from 'react-router-dom'
+import navigateToRoute from '../utils/navigation';
 
 function Login() {
-  const GoClick = () => {
-    alert('Button Go clicked!');
-  };
+
+    const history = useHistory();
+    const handlePlayButtonClick = () => {
+        navigateToRoute(history, '/main-menu');
+    };
+
 
   return (
     <div className="main_container">
@@ -17,9 +21,7 @@ function Login() {
                 <Field type="text" id="username" name="username" placeholder="Username"></Field>
                 <Field type="password" id="password" name="password" placeholder="Passsword" ></Field>
             </form>
-            <Link to="screens\MainMenu">
-                <button type="submit" className="LetsGo">Let's Go</button>
-            </Link>
+                <button type="submit" className="LetsGo" onClick={handlePlayButtonClick}>Let's Go</button>
         </div>
         
 
