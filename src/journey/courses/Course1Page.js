@@ -1,73 +1,71 @@
 import React from 'react';
+import course1Data from './course1Data.json';
 import { useHistory } from 'react-router-dom';
 import BackButton from '../../components/BackButton';
 import navigateToRoute from '../../utils/navigation';
 
 function Course1Page() {
+  const history = useHistory();
+  const handlePlayButtonClick = (path) => {
+    navigateToRoute(history, path);
+  };
 
-    const history = useHistory();
-    const handlePlayButtonClick = () => {
-        navigateToRoute(history, '/main-menu/journey/course1/introduction');
-    };
+  const setPhaseStatus = (phaseId, levelId) => {
+    // Update the status of the phase to "ongoing" when it is clicked
+    const updatedData = course1Data.levels.map((level) => {
+      if (level.id === levelId) {
+        return {
+          ...level,
+          phases: level.phases.map((phase) => {
+            if (phase.id === phaseId) {
+              return {
+                ...phase,
+                status: 'ongoing',
+              };
+            }
+            return phase;
+          }),
+        };
+      }
+      return level;
+    });
+
+    // Save the updated data to the JSON file
+    // (You'll need to implement the actual saving logic)
+  };
 
   return (
     <div id='course1-page-container'>
-        <div className="header-bar">
-            <BackButton />
-            <h1>Learn to read and write with Jolly Phonics</h1>
-        </div>
-        <div className="course-contents">
-            <div className="level" id='level-1'>
-                <h2>Group 1 - S A T I P N</h2>
-                <div className="level-content">
-                    <div id="1" className="phase unlock">
-                        <img src="../../assets/img/courses/course_1/introduction.png" alt="Introduction" />
-                        <h2>Introduction</h2>
-                        <div className="play-button" onClick={handlePlayButtonClick} ></div>
-                    </div>
-                    <div className="phase lock" >
-                        <img src="../../assets/img/courses/course_1/introduction.png" alt="Sound of S and A" />
-                        <h2>S & A</h2>
-                        <div className="play-button" onClick={handlePlayButtonClick} ></div>
-                    </div>
-                    <div  id="3" className="phase lock">
-                        <img src="../../assets/img/courses/course_1/introduction.png" alt="Practice S & A" />
-                        <h2>Practice S & A</h2>
-                        <div className="play-button" onClick={handlePlayButtonClick} ></div>
-                    </div>
-                    <div  id="4" className="phase lock" >
-                        <img src="../../assets/img/courses/course_1/introduction.png" alt="Sound of T and I" />
-                        <h2>T & I</h2>
-                        <div className="play-button" onClick={handlePlayButtonClick} ></div>
-                    </div>
-                    <div  id="5" className="phase lock">
-                        <img src="../../assets/img/courses/course_1/introduction.png" alt="Practice T & I" />
-                        <h2>Practice T & I</h2>
-                        <div className="play-button" onClick={handlePlayButtonClick} ></div>
-                    </div>
-                    <div  id="6" className="phase lock">
-                        <img src="../../assets/img/courses/course_1/introduction.png" alt="Review S A T I" />
-                        <h2>Review S A T I</h2>
-                        <div className="play-button" onClick={handlePlayButtonClick} ></div>
-                    </div>
-                    <div  id="7" className="phase lock" >
-                        <img src="../../assets/img/courses/course_1/introduction.png" alt="Sound of P and N" />
-                        <h2>P & N</h2>
-                        <div className="play-button" onClick={handlePlayButtonClick} ></div>
-                    </div>
-                    <div  id="8" className="phase lock">
-                        <img src="../../assets/img/courses/course_1/introduction.png" alt="Practice P & N" />
-                        <h2>Practice P & N</h2>
-                        <div className="play-button" onClick={handlePlayButtonClick} ></div>
-                    </div>
-                    <div  id="9" className="phase lock">
-                        <img src="../../assets/img/courses/course_1/introduction.png" alt="Review S A T I P N" />
-                        <h2>Review S A T I P N</h2>
-                        <div className="play-button" onClick={handlePlayButtonClick} ></div>
-                    </div>
+      <div className="header-bar">
+        <BackButton />
+        <h1>Learn to read and write with Jolly Phonics</h1>
+      </div>
+      <div className="course-contents">
+        {course1Data.levels.map((level) => (
+          <div className="level" id={`level-${level.id}`} key={`level-${level.id}`}>
+            <h2>{level.name}</h2>
+            <div className="level-content">
+              {level.phases.map((phase) => (
+                <div
+                  id={phase.id}
+                  className={`phase ${phase.status}`}
+                  key={`phase-${phase.id}`}
+                  onClick={() => setPhaseStatus(phase.id, level.id)}
+                >
+                  <img src={phase.image} alt={phase.name} />
+                  <h2>{phase.name}</h2>
+                  <div
+                    className="play-button"
+                    onClick={() =>
+                      handlePlayButtonClick(`/main-menu/journey/course1/${phase.id}`)
+                    }
+                  ></div>
                 </div>
+              ))}
             </div>
-        </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
