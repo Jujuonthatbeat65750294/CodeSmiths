@@ -8,6 +8,7 @@ import Game1 from './games/game1/game1';
 import Phase_Guess_First_Letter from './journey/Phase_Guess_First_Letter';
 import GameSelection from './GameSection/GameSelection';
 import LoginBackground from './login/loginBackground';
+import PaysageGame from '../src/old/paysageGame';
 
 
 
