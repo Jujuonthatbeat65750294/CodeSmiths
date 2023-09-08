@@ -1,13 +1,16 @@
-// useImageQuiz.js
+// useWordExercise.js
 
 import { useState } from 'react';
 
-const useImageQuiz = (images, groupLetters) => {
+const useWordExercise = (words, groupLetters) => {
   // State variables
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedLetter, setSelectedLetter] = useState('');
   const [isCompleted, setIsCompleted] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [currentGroupLetters, setCurrentGroupLetters] = useState(groupLetters);
+
+  const totalImages = words.length;
 
   // Event handler for handling letter button click.
   // @param {string} letter - The selected letter.
@@ -15,32 +18,33 @@ const useImageQuiz = (images, groupLetters) => {
     setSelectedLetter(letter);
 
     // Check if the selected letter matches the first letter of the current word
-    const isFirstLetterMatch = letter === images[currentImageIndex].word[0];
+    const isFirstLetterMatch = letter === words[currentImageIndex].word[0];
 
-    if (currentImageIndex === images.length - 1) {
+    if (currentImageIndex === words.length - 1) {
       setIsCompleted(true);
     } else if (isFirstLetterMatch) {
-      // Increase the progress and move to the next image if the first letter is matched
+      // Increase the progress and move to the next word if the first letter is matched
       setProgress((prevProgress) => prevProgress + 1);
-      handleNextImage();
+      nextWord();
     }
   };
 
   // Check if the selected letter matches the first letter of the current word
-  const isFirstLetterMatch = selectedLetter === images[currentImageIndex].word[0];
+  const isFirstLetterMatch = selectedLetter === words[currentImageIndex].word[0];
 
-  // Move to the next image after a delay
-  const handleNextImage = () => {
-    setSelectedLetter('');
-    setTimeout(() => {
-      setCurrentImageIndex((prevIndex) => prevIndex + 1);
-    }, 1000); // Delay duration in milliseconds before moving to the next image
+  // Move to the next word
+  const nextWord = () => {
+    if (currentImageIndex + 1 < totalImages) {
+      setCurrentImageIndex(currentImageIndex + 1);
+      setProgress(progress + 1);
+    } else {
+      setIsCompleted(true);
+    }
   };
 
-  // Reset the state variables to restart the quiz
+  // Reset the state variables to restart the exercise
   const handleRetry = () => {
     setCurrentImageIndex(0);
-    setSelectedLetter('');
     setIsCompleted(false);
     setProgress(0);
   };
@@ -51,11 +55,11 @@ const useImageQuiz = (images, groupLetters) => {
     isCompleted,
     progress,
     handleLetterClick,
-    isFirstLetterMatch,
     handleRetry,
-    groupLetters,
-    totalImages: images.length,
+    groupLetters: currentGroupLetters,
+    totalImages,
+    nextWord,
   };
 };
 
-export default useImageQuiz;
+export default useWordExercise;

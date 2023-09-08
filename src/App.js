@@ -6,7 +6,7 @@ import JourneyPage from './journey/JourneyPage';
 import Course1Page from './journey/courses/Course1Page';
 import Introduction from './journey/courses/phases/introduction';
 import SoundOfSAndAPage from './journey/courses/phases/sound_of_s_and_a';
-import Game1 from './games/game1/game1';
+import Guess_First_Letter from './journey/courses/phases/guess_first_letter';
 import Phase_Guess_First_Letter from './journey/Phase_Guess_First_Letter';
 import GameSelection from './GameSection/GameSelection';
 import LoginBackground from './login/loginBackground';
@@ -40,6 +40,15 @@ function App() {
         </Route>
         <Route exact path="/main-menu/journey/course1/sound-of-s-and-a">
           <SoundOfSAndAPage />
+        </Route>
+        <Route exact path="/main-menu/journey/course1/practice_s_a">
+          <Guess_First_Letter groupLetters={['S', 'A']} />
+        </Route>
+        <Route exact path="/main-menu/journey/course1/practice_t_i">
+          <Guess_First_Letter groupLetters={['T', 'I']} />
+        </Route>
+        <Route exact path="/main-menu/journey/course1/review_s_a_t_i">
+          <Guess_First_Letter groupLetters={['S', 'A', 'T', 'I']} />
         </Route>
         <Route exact path="/main-menu/games/">
           <GameSelection />

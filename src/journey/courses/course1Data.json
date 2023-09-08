@@ -21,7 +21,7 @@
           },
           {
             "id": 3,
-            "content": "introduction",
+            "content": "practice_s_a",
             "name": "Practice S and A",
             "status": "unlock",
             "image": "../../assets/img/courses/course_1/practice.png"
@@ -35,14 +35,14 @@
           },
           {
             "id": 5,
-            "content": "introduction",
+            "content": "practice_t_i",
             "name": "Practice T and I",
             "status": "unlock",
             "image": "../../assets/img/courses/course_1/practice.png"
           },
           {
             "id": 6,
-            "content": "introduction",
+            "content": "review_s_a_t_i",
             "name": "Review S A T I",
             "status": "unlock",
             "image": "../../assets/img/courses/course_1/review.png"

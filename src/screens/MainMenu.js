@@ -7,7 +7,7 @@ const MainMenu = ({children}) => {
                 <div className="profileImgUsername"> <div className="profile">
                     <img src='../../assets/img/menu/fish_64.png'/>
                 </div>
-                <div className='username'>My Name</div>
+                <div className='username'>Gwen</div>
                 </div>
                 <div className="setting"></div>
             </div>
