@@ -5,31 +5,43 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import GameItem from './GameItem';
 import './GameSelection.css';
 import './Bubble.css';
-
+import Phase_Guess_First_Letter from '../journey/test/Phase_Guess_First_Letter';
+import PaysageGame from '../old/paysageGame';
 
 
 function GameSelection(){
   const games = [
     {
       title: 'Phonics Game',
-      path: '/games/game1',
+      path: '../old/paysageGame',
       imageUrl: 'https://cdn.splashmath.com/curriculum_uploads/images/playables/bucbucs_deep_dive_45.png',
       description: 'Listen and ct phonics',
+   
     },
     {
       title: 'Drag and drop',
-      path: '/games/game2',
+      path: '../journey/test',
       imageUrl: 'https://cdn.splashmath.com/curriculum_uploads/images/playables/case_carnival_3_4.png',
       description: 'Drag and drop letters',
     },
     {
       title: 'Maths game',
-      path: '/games/game3',
+      path: '../journey/test',
       imageUrl: 'https://i5.walmartimages.com/seo/count-ocean-animals-fun-game-kids-Game-2-5-Year-Old-Numbers-From-1-10-Marine-Life-Guessing-Book-For-Preschoolers-Activity-Fun-Puzzles-Find-Animals-An_30995d31-ffa1-4c3f-a8c9-b05b57b30f93.251408d7cd6366bde92fb62edc168dd8.jpeg',
       description: 'Add and substract numbers',
     },
     // Add more game objects here
   ];
+
+
+
+  const gameComponents = {
+    '../journey/Phase_Guess_First_Letter': <Phase_Guess_First_Letter/>,
+    '../journey/Phase_Guess_First_Letter': <Phase_Guess_First_Letter/>,
+    '../journey/Phase_Guess_First_Letter': <Phase_Guess_First_Letter/>,
+    
+  };
+
 
   return (
     <div>

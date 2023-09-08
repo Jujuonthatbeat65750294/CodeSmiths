@@ -6,6 +6,7 @@ import JourneyPage from './journey/JourneyPage';
 import Course1Page from './journey/courses/Course1Page';
 import Game1 from './games/game1/game1';
 import GameSelection from './GameSection/GameSelection';
+import LoginBackground from './login/loginBackground';
 
 
 // npx json-server --watch data/db.json --port 8000

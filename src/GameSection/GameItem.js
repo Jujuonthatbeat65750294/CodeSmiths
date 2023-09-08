@@ -6,7 +6,7 @@ function GameItem({ title, path, imageUrl, description }) {
 
   const history = useHistory();
   const handlePlayButtonClick = () => {
-    navigateToRoute(history, path);
+     history.push(path);
     console.log('Game has been chosen');
   };
   return (
