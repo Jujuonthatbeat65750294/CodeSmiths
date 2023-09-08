@@ -14,18 +14,18 @@ function Course1Page() {
     <div id='course1-page-container'>
         <div className="header-bar">
             <BackButton />
-            <h2>Learn to read and write with Jolly Phonics</h2>
+            <h1>Learn to read and write with Jolly Phonics</h1>
         </div>
         <div className="course-contents">
-            <div className="level-contents" id='level-1'>
-                <h3>Group 1 - S A T I P N</h3>
+            <div className="level" id='level-1'>
+                <h2>Group 1 - S A T I P N</h2>
                 <div className="level-content">
-                    <div className="phase">
+                    <div className="phase unlock">
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Introduction" />
                         <h2>Introduction</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
                     </div>
-                    <div className="phase lock" >
+                    <div className="phase unlock" >
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Sound of S and A" />
                         <h2>S & A</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
