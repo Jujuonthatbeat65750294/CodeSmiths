@@ -3,12 +3,6 @@ import Login from './loginPage'
 import '../index.css'
 
 const LoginBackground = () => {
-
-    const divStyle = {
-        // backgroundColor:'linear-gradient(to top, #ffff, #1365A6; )',
-        overflowY:'hidden'
-        
-    };
   
   return (
     

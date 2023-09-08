@@ -22,7 +22,9 @@ code {
 .App {
   padding: 0px;
   text-align: left;
-  height: 200vh;
+  /* height: 200vh; */
+  overflow: hidden;
+  
 }
 
 .App .home .home-content h1 {

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Login from './login/loginPage';
 import MainMenu from './screens/MainMenu';
 import JourneyPage from './journey/JourneyPage';
 import Course1Page from './journey/courses/Course1Page';
@@ -36,7 +35,7 @@ function App() {
       <div className="App">
       <Switch>
         <Route exact path="/">
-          <Login></Login>
+          <LoginBackground></LoginBackground>
         </Route>
         <Route exact path="/main-menu">
           <MainMenu></MainMenu>
