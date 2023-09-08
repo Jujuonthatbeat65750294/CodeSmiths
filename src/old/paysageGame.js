@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import '../index.css'
 import Home from './Home';
 import Game from "./game";
+import './bubble2.css';
+
 
 
 const PaysageGame = () => {
@@ -85,6 +87,7 @@ const PaysageGame = () => {
         transform="translate(-478.09 -429.25)"
         fill="#f4992b"
       />
+      
       <path
         d="M522.23,450a14.91,14.91,0,0,1,7.63-3.61,2.55,2.55,0,0,1,1.67.15,2.1,2.1,0,0,1,.64,2.47c-0.29.88-.88,1.62-1.24,2.47-1,2.46.09,5.25-.07,7.91-0.06,1.11-.57,2.41-1.66,2.59a2.66,2.66,0,0,1-1.52-.34,14.46,14.46,0,0,1-3.48-2.29c-0.76-.67-1.77-1.48-2.65-1Z"
         transform="translate(-478.09 -429.25)"
@@ -141,11 +144,20 @@ const PaysageGame = () => {
   </g>
 </svg>
 
+
 {/* Games */}
 
 
-<div id="gameBorder"><Game></Game></div>
-
+<div id="gameBorder"><Game>
+  </Game></div>
+  <div className="bubbles bubble-1"></div>
+          <div className="bubbles bubble-2"></div>
+          <div className="bubbles bubble-3"></div>
+          <div className="bubbles bubble-4"></div>
+         
+         
+   =
+          
 
 </section>
 </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './game.css';
 
+
 class Game extends Component {
   constructor(props) {
     super(props);
@@ -94,6 +95,17 @@ class Game extends Component {
       //set button go to next phase
     }
   }
+
+
+
+
+
+
+
+
+
+
+
   
 
   render() {
@@ -108,6 +120,8 @@ class Game extends Component {
       <div>
         
         <div className='Game'>Sound Recognition Game</div>
+        
+      
         <p>Round {currentRound + 1}</p>
         <p>Listen to the sound and choose the correct word:</p>
 
@@ -134,7 +148,7 @@ class Game extends Component {
       />
       <div className='objectLabels'>{option.label}</div>
    
-    
+      
     </div>
   ))}
 </div>

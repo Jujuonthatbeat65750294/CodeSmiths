@@ -20,7 +20,7 @@ function Course1Page() {
             <div className="level" id='level-1'>
                 <h2>Group 1 - S A T I P N</h2>
                 <div className="level-content">
-                    <div className="phase unlock">
+                    <div id="1" className="phase unlock">
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Introduction" />
                         <h2>Introduction</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
@@ -30,37 +30,37 @@ function Course1Page() {
                         <h2>S & A</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
                     </div>
-                    <div className="phase lock">
+                    <div  id="3" className="phase lock">
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Practice S & A" />
                         <h2>Practice S & A</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
                     </div>
-                    <div className="phase lock" >
+                    <div  id="4" className="phase lock" >
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Sound of T and I" />
                         <h2>T & I</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
                     </div>
-                    <div className="phase lock">
+                    <div  id="5" className="phase lock">
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Practice T & I" />
                         <h2>Practice T & I</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
                     </div>
-                    <div className="phase lock">
+                    <div  id="6" className="phase lock">
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Review S A T I" />
                         <h2>Review S A T I</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
                     </div>
-                    <div className="phase lock" >
+                    <div  id="7" className="phase lock" >
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Sound of P and N" />
                         <h2>P & N</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
                     </div>
-                    <div className="phase lock">
+                    <div  id="8" className="phase lock">
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Practice P & N" />
                         <h2>Practice P & N</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
                     </div>
-                    <div className="phase lock">
+                    <div  id="9" className="phase lock">
                         <img src="../../assets/img/courses/course_1/introduction.png" alt="Review S A T I P N" />
                         <h2>Review S A T I P N</h2>
                         <div className="play-button" onClick={handlePlayButtonClick} ></div>
