@@ -22,7 +22,6 @@ code {
 .App {
   padding: 0px;
   text-align: left;
-  background-color:#35373e;
   height: 200vh;
 }
 
@@ -424,7 +423,7 @@ svg {
   margin: 0;
   display: block; }
 
-.bubbles {
+g.bubbles {
   width: 10%;
   height: 10%; }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Field from './components/field';
 import "./loginCss/login.css";
+import { Link } from 'react-router-dom/cjs/react-router-dom';
 
 function Login() {
   const GoClick = () => {
@@ -16,7 +17,9 @@ function Login() {
                 <Field type="text" id="username" name="username" placeholder="Username"></Field>
                 <Field type="password" id="password" name="password" placeholder="Passsword" ></Field>
             </form>
-            <button type="submit" className="Go" onClick={GoClick}>Let's Go</button>
+            <Link to="screens\MainMenu">
+                <button type="submit" className="LetsGo">Let's Go</button>
+            </Link>
         </div>
         
 

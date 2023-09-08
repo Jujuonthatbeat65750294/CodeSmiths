@@ -15,11 +15,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-
       <Switch>
-        <Route  exact path="/">
-
-        </Route>
         <Route exact path="/">
           <MainMenu></MainMenu>
         </Route>
