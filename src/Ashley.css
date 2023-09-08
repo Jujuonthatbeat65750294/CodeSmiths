@@ -16,8 +16,7 @@ code {
 .App {
   padding: 0;
   height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  width: 98vw;
 }
 
  /* Main */
@@ -75,9 +74,7 @@ code {
   text-align: center;
 }
 
- .bottom-nav {
-  /* The Journey and Games are stored in it*/
-}
+
 .journey-container {
   position: absolute;
   bottom: 0;
@@ -136,30 +133,32 @@ code {
 
 /* Journey Page*/
 #journey-page-container {
+  padding: 0 100px;
   height: 100%;
-  width: 100%;
   text-align: center; 
 }
 
 .header-bar {
+  margin-top: 40px;
   display: flex;
   align-items: center;
 }
 
 .back-button {
   height: 60px;
-  margin-right: 25vw;
+  margin-right: 20px;
 }
 
 .contents {
+  margin-top: 50px;
   display: flex;
   justify-content: left;
-  padding: 30px 0;
+  flex-wrap: wrap;
 }
 
 .course {
   position: relative;
-  width: 30vw;
+  width: 30%;
   margin-right: 40px;
   margin-bottom: 40px;
 }
@@ -179,24 +178,46 @@ code {
 
 /* Course 1 */
 #course1-page-container {
+  padding: 0 100px;
   height: 100%;
-  width: 100%;
   text-align: center; 
+} 
+
+.header-bar h1,h2 {
+  color: #F4F4F4;
+}
+.level h2 {
+  color: #FBC73A;
+}
+
+.course-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.level {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 20px;
+}
+.level-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 .phase {
   position: relative;
-  width: 20vw;
+  width: 25vw;
   margin-right: 40px;
   margin-bottom: 40px;
 }
-
 .phase img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
-
 .phase h2 {
   position: absolute;
   top: 50%;
@@ -204,7 +225,7 @@ code {
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
-  color: white;
+  color: #F4F4F4;
 }
 
 .play-button {
@@ -218,10 +239,16 @@ code {
   border-radius: 50%;
   transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
-.play-button:hover {
+.phase.unlock .play-button:hover {
   width: 82px;
   height: 82px;
   background-color: #ffbe3d;
+}
+.phase.lock .play-button{
+  background-color: grey;
+}
+.phase.lock img {
+  filter: grayscale(100%);
 }
 
 /* exercise*/
