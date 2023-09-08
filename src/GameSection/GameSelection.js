@@ -5,6 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import GameItem from './GameItem';
 import './GameSelection.css';
 import './Bubble.css';
+import BackButton from '../components/BackButton';
 
 
 function GameSelection(){
@@ -37,7 +38,9 @@ function GameSelection(){
 
   return (
     <div>
+    
     <section className="game-section">
+    <BackButton/>
       <h2 className="title">trending games</h2>
       <OwlCarousel autoWidth loop className="owl-carousel custom-carousel owl-theme">
         {games.map((game, index) => (
