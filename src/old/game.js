@@ -100,23 +100,13 @@ class Game extends Component {
     
     const { currentRound, rounds, progressStatus } = this.state;
 
-    const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
-  height: 20,
-  borderRadius: 5,
-  [`&.${linearProgressClasses.colorPrimary}`]: {
-    backgroundColor: theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
-  },
-  [`& .${linearProgressClasses.bar}`]: {
-    borderRadius: 5,
-    backgroundColor: theme.palette.mode === 'light' ? '#1a90ff' : '#308fe8',
-  },
-  }));
+    
 
 
 
     return (
       <div>
-        <div><BorderLinearProgress variant="determinate" value={progressStatus} /></div>
+        
         <div className='Game'>Sound Recognition Game</div>
         <p>Round {currentRound + 1}</p>
         <p>Listen to the sound and choose the correct word:</p>
