@@ -117,8 +117,16 @@ class Game extends Component {
 
 
     return (
-      <div style={{ backgroundColor:'lightblue', // Set the width to 100% to make sure it fills its parent container
-    }}  >
+      <div style={{ height:'640px',backgroundColor:'lightblue',  backgroundImage: 'url("/dolphin.png")', // Replace 'path/to/your/image.jpg' with the actual path to your background image
+      backgroundSize: 'contain', // Adjust the background size as needed
+      backgroundRepeat: 'no-repeat', // Prevent background image from repeating
+      backgroundPosition: 'center '  }}>
+      
+      
+      
+      
+      
+  
         
         <div className='Game'>Sound Recognition Game</div>
         

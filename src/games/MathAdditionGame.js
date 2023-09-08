@@ -30,7 +30,7 @@ function MathAdditionGame() {
       playAudio("/assets/audio/correct.mp3");
     } else {
       playAudio(`/assets/audio/wrong answer.mp3`);
-      playAudio("/assets/audio/error.mp3");
+    
       setStreaks(0);
     }
 

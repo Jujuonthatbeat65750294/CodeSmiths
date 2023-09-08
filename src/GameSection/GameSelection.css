@@ -180,7 +180,7 @@
   .Go {
    /* Center vertically as well */
     width: 100px;
-    height: 100px;
+    height: 200px;
     background-image: url('../../public/go.png');
     background-size: cover; /* Use background-size instead of background-position */
     background-repeat: no-repeat;

@@ -148,7 +148,7 @@ const PaysageGame = () => {
 {/* Games */}
 
 
-<div id="gameBorder" style={{ backgroundColor:'lightblue',  }} ><Game>
+<div id="gameBorder" style={{ backgroundColor:'lightblue',    }} ><Game>
   </Game></div>
   <div className="bubbles bubble-1"></div>
           <div className="bubbles bubble-2"></div>
