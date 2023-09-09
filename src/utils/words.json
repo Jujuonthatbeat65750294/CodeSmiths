@@ -1,0 +1,72 @@
+[
+    {
+      "image": "ant.png",
+      "word": "ant",
+      "sound": "ant.mp3"
+    },
+    {
+      "image": "apple.png",
+      "word": "apple",
+      "sound": "apple.mp3"
+    },
+    {
+      "image": "act.png",
+      "word": "act",
+      "sound": "act.mp3"
+    },
+    {
+      "image": "ash.png",
+      "word": "ash",
+      "sound": "ash.mp3"
+    },
+    {
+      "image": "am.png",
+      "word": "am",
+      "sound": "am.mp3"
+    },
+    {
+      "image": "an.png",
+      "word": "an",
+      "sound": "an.mp3"
+    },
+    {
+      "image": "as.png",
+      "word": "as",
+      "sound": "as.mp3"
+    },
+    {
+      "image": "at.png",
+      "word": "at",
+      "sound": "at.mp3"
+    },
+    {
+      "image": "sad.png",
+      "word": "sad",
+      "sound": "sad.mp3"
+    },
+    {
+      "image": "sit.png",
+      "word": "sit",
+      "sound": "sit.mp3"
+    },
+    {
+      "image": "six.png",
+      "word": "six",
+      "sound": "six.mp3"
+    },
+    {
+      "image": "so.png",
+      "word": "so",
+      "sound": "so.mp3"
+    },
+    {
+      "image": "see.png",
+      "word": "see",
+      "sound": "see.mp3"
+    },
+    {
+      "image": "say.png",
+      "word": "say",
+      "sound": "say.mp3"
+    }
+  ]
