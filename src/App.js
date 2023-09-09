@@ -26,8 +26,7 @@ function App() {
           <LoginBackground></LoginBackground>
         </Route>
         <Route exact path="/main-menu">
-          <MainMenu>
-          </MainMenu>
+          <MainMenu />
         </Route>
         <Route exact path="/main-menu/journey">
           <JourneyPage />

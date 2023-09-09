@@ -21,11 +21,10 @@ code {
 
  /* Main */
  .main-menu-content {
-
   padding: 0 100px;
   display: flex;
   flex-direction: column;
-  background-color: #2C86C7; /*#282c34 -- #2C86C7* -- #1365A6*/  /* Change to slightly darker blue */
+  /*background-color: #2C86C7;*/ /*#282c34 -- #2C86C7* -- #1365A6*/  /* Change to slightly darker blue */
   max-width: 100%;
   height: 100vh;
   justify-content: center;
@@ -76,6 +75,16 @@ code {
   color: #FBC73A;
  }
 
+ .main-menu-content .background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
  .main-menu-content h2.maintitle {
   text-align: center;
   padding: 0;
@@ -104,6 +113,12 @@ code {
   background-color: #282c3400; 
   text-align: center;
 }
+#course1 img{
+  width: 80%;
+  height: 80%;
+  margin-top: 10px; 
+  border-radius: 20px;
+}
 
 .journey-container {
   position: absolute;
@@ -124,7 +139,7 @@ code {
   color: white;
 }
 .journey-container, .games-container {
-  margin: 0;
+  margin: 20px 60px;
   display: flex;
   width: 20vw;
   flex-direction: column;
@@ -147,7 +162,7 @@ code {
   transition: opacity 0.3s ease-in-out;
 }
 .journey-container:hover .image, .games-container:hover .image{
-  opacity: 0.3;
+  opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
 }
 .journey-container h2, .games-container h2 {
@@ -166,6 +181,16 @@ code {
   padding: 0 100px;
   height: 100%;
   text-align: center; 
+}
+
+.journey-page-container .background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .header-bar {

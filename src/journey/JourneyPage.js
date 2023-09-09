@@ -12,6 +12,7 @@ function JourneyPage() {
     };
     return(
         <div id='journey-page-container'>
+            <video className="background-video" autoPlay loop muted src="../../../assets/videos/background-video.mp4"/>
             <div className="header-bar">
                 <BackButton />
                 <h1>Journey Page</h1>

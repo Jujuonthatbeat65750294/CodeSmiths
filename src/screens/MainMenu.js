@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 const MainMenu = ({children}) => {
     return ( 
         <div className="main-menu-content">
+            <video className="background-video" autoPlay loop muted src="../../assets/videos/background-video.mp4"/>
             <div className="top-menu-bar">
                 <div className="profileImgUsername"> <div className="profile">
                     <img src='../../assets/img/menu/fish_64.png'/>
@@ -14,18 +15,8 @@ const MainMenu = ({children}) => {
             <h2 className='maintitle'>Continue Journey</h2>
             <div className="continue-contents">
                 <div id="course1">
-                    <div id="1">
-                        <img src="../../assets/img/courses/course_1/introduction.png"  
-                        
-                            style={{
-                                width:'75%', 
-                                height:'75%',
-                                marginTop:'10px', 
-                                borderRadius:'20px',
-                                
-                                }} alt="Introduction" />
-
-                        <h2 style={{ margin:'-10px', color:'white'}}>Introduction</h2>
+                    <div>
+                        <img src="../../assets/img/courses/course_1/introduction.png"alt="Introduction" />
                     </div>
 
                 </div>

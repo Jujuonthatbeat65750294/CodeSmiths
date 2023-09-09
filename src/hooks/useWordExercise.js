@@ -18,7 +18,7 @@ const useWordExercise = (words, groupLetters) => {
     setSelectedLetter(letter);
 
     // Check if the selected letter matches the first letter of the current word
-    const isFirstLetterMatch = letter === words[currentImageIndex].word[0];
+    const isFirstLetterMatch = letter.toLowerCase() === words[currentImageIndex].word.charAt(0).toLowerCase();
 
     if (currentImageIndex === words.length - 1) {
       setIsCompleted(true);
@@ -30,7 +30,7 @@ const useWordExercise = (words, groupLetters) => {
   };
 
   // Check if the selected letter matches the first letter of the current word
-  const isFirstLetterMatch = selectedLetter === words[currentImageIndex].word[0];
+  const isFirstLetterMatch = selectedLetter.toLowerCase() === words[currentImageIndex].word.charAt(0).toLowerCase();
 
   // Move to the next word
   const nextWord = () => {

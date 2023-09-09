@@ -33,6 +33,14 @@ function Guess_First_Letter({ groupLetters }) {
   // Function to play audio question
   const playAudio = () => {
     const audio = new Audio(`../../../assets/audio/question.mp3`);
+    const wordAudio = new Audio(`../../../assets/audio/sounds/${words[currentImageIndex].sound}`);
+    
+    audio.addEventListener('ended', () => {
+        wordAudio.play().catch((error) => {
+          console.error('Failed to play audio:', error);
+        });
+      });
+
     audio.play().catch((error) => {
       // Handle the error, e.g., display an error message or fallback to an alternative action.
       console.error('Failed to play audio:', error);
