@@ -576,3 +576,9 @@ svg .fish2 {
     height:60px;
     width: 100%;
   }
+
+  .playback1{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }

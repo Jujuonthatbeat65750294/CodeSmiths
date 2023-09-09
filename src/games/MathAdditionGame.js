@@ -84,6 +84,7 @@ function MathAdditionGame() {
 
   return (
     <section>
+   
       <div className="maths streaks">
         <img
           src="https://static.vecteezy.com/system/resources/previews/018/974/781/original/cute-cartoon-starfish-icon-png.png"
