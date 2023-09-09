@@ -16,6 +16,9 @@ const AudioManager = ({ audioFile, volume }) => {
       audio.pause();
     };
 
+    // Stop the audio playback when the component mounts
+    pauseAudio();
+
     document.addEventListener('click', playAudio);
 
     return () => {
@@ -24,7 +27,7 @@ const AudioManager = ({ audioFile, volume }) => {
     };
   }, [audioFile, volume]);
 
-  return null;
+  return <audio ref={audioRef} />;
 };
 
 export default AudioManager;

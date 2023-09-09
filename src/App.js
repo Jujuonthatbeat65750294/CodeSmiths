@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import AudioManager from './utils/AudioManager';
-import MainMenu from './screens/MainMenu';
+import MainMenu from './mainmenu/MainMenu';
 import JourneyPage from './journey/JourneyPage';
 import Course1Page from './journey/courses/Course1Page';
 import Introduction from './journey/courses/phases/introduction';
@@ -20,7 +20,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-      {/* <AudioManager audioFile="../assets/audio/bg_music/BG_2-Underwater Mermaid Castle.mp3" volume={0.2} /> */}
+      <AudioManager audioFile="../assets/audio/bg_music/BG_2-Underwater Mermaid Castle.mp3" volume={0.2} />
       <Switch>
         <Route exact path="/">
           <LoginBackground></LoginBackground>
@@ -48,6 +48,9 @@ function App() {
         </Route>
         <Route exact path="/main-menu/journey/course1/review_s_a_t_i">
           <Guess_First_Letter groupLetters={['S', 'A', 'T', 'I']} />
+        </Route>
+        <Route exact path="/main-menu/journey/course1/practice_p_n">
+          <Guess_First_Letter groupLetters={['P', 'N']} />
         </Route>
         <Route exact path="/main-menu/games/">
           <GameSelection />

@@ -130,7 +130,7 @@ class Game extends Component {
 
     return (
       
-      <div style={{ backgroundColor:'lightblue',  backgroundImage: 'url("/dolphin.png")', // Replace 'path/to/your/image.jpg' with the actual path to your background image
+      <div id='game-content' style={{ backgroundColor:'lightblue',  backgroundImage: 'url("/dolphin.png")', // Replace 'path/to/your/image.jpg' with the actual path to your background image
       backgroundSize: 'contain', // Adjust the background size as needed
       backgroundRepeat: 'no-repeat', // Prevent background image from repeating
       backgroundPosition: 'center ' ,

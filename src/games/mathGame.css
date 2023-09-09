@@ -1,13 +1,6 @@
 
-.bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-  section {
+
+#maths-game-container {
     position: relative;
     overflow: hidden;
       height: 100vh;
@@ -15,13 +8,21 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  }
-  
+}
+#maths-game-container .bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+ /* 
   body {
       background: linear-gradient(60deg, #420285, #08BDBD);;
   }
-  
-  .title {
+*/
+#maths-game-container .title {
       text-transform: capitalize;
       padding-bottom: 30px;
       color: greenyellow;
@@ -32,7 +33,7 @@
       animation: breathe 2s linear infinite;
   }
   
-  .centerdiv {
+  #maths-game-container .centerdiv {
       position: relative;
       width: 500px;
       height: 400px;
@@ -45,15 +46,15 @@
       background-size: contain;;
   }
   
-  .insertBox {
+  #maths-game-container .insertBox {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 80px;
   }
   
-  #v1,
-  #v2 {
+  #maths-game-container #v1,
+  #maths-game-container #v2 {
       color: black;
       text-align: center;
       padding: 30px 30px;
@@ -64,16 +65,16 @@
       border-radius: 100%;
   }
   
-  .Box1 p {
+  #maths-game-container .Box1 p {
       font-size: 60px;
       margin: 0 10px 0 10px;
       font-weight: bolder;
       color: red;
   }
-  .middlebox{
+  #maths-game-container .middlebox{
     margin: 0 0 20px 0;
   }
-  .middlebox #answ {
+  #maths-game-container .middlebox #answ {
       padding: 5px 0;
       text-align: center;
       color: white;
@@ -85,7 +86,7 @@
       border: 4px solid black;
   }
   
-  .maths.streaks{
+  #maths-game-container .maths.streaks{
     position: relative;
     display: flex;
     align-items: center;
@@ -103,11 +104,11 @@
     background-size: cover;
     z-index: 1;
   }
-  .maths.streaks span{
+  #maths-game-container .maths.streaks span{
     width: 40px;
     text-align: right;
   }
-  .fa-solid.fa-volume-high{
+  #maths-game-container .fa-solid.fa-volume-high{
     position: absolute;
     top: 50px;
     right: 90px;

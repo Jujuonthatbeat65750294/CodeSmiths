@@ -1,5 +1,5 @@
 /* From root to gameBorder */
-#gameBorder { 
+#game-content #gameBorder { 
     width: 1000px;
     min-height: 400px;
     margin: 0 auto;
@@ -10,20 +10,7 @@
     border-radius:10px;
   }
   
-  /* src/App.css */
-  
-  /* Style for the main container */
-  
-  /* App.css */
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-  }
-  
-  .container {
+  #game-content .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -32,18 +19,18 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  h1 {
+  #game-content h1 {
     font-size: 24px;
     margin-top: 0;
     color: #333;
   }
   
-  p {
+  #game-content p {
     font-size: 18px;
     color: #333;
   }
   
-  button {
+  #game-content button {
     font-size: 16px;
     padding: 10px 20px;
     margin: 10px;
@@ -55,30 +42,30 @@
     transition: background-color 0.3s;
   }
   
-  button:disabled {
+  #game-content button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   }
   
-  button:hover {
+  #game-content button:hover {
     background-color: #0056b3;
   }
   
-  .button-container {
+  #game-content .button-container {
     text-align: center;
   }
   
-  .options-container {
+  #game-content .options-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   
-  .options-container button {
+  #game-content .options-container button {
     width: 120px;
   }
   
-  .message {
+  #game-content .message {
     font-size: 16px;
     font-weight: bold;
     color: #333;
@@ -87,7 +74,7 @@
   }
   
   
-  .myaudio {
+  #game-content .myaudio {
     width: 100px;
     height: 50px;
     cursor: pointer;
@@ -101,12 +88,12 @@
     margin-left: 45%;
   }
   
-  .objectLabels{
+  #game-content .objectLabels{
     color: black;
     font-weight: bolder;
   }
   
-  .Game{
+  #game-content .Game{
     color: #ffffff00;
   }
   

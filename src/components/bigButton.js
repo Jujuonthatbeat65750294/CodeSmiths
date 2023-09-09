@@ -8,4 +8,4 @@ function BigButton({ text, onClick }) {
   );
 }
 
-export default ReusableButton;
+export default BigButton;

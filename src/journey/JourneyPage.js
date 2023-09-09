@@ -2,7 +2,6 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import BackButton from '../components/BackButton';
 import navigateToRoute from '../utils/navigation';
-import '../Ashley.css';
 
 function JourneyPage() {
 

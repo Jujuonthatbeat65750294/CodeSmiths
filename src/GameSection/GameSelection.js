@@ -38,29 +38,30 @@ function GameSelection(){
 
   return (
     <div>
-    
-    <section className="game-section">
-    <BackButton/>
-      <h2 className="buttontitle">trending games</h2>
-      <OwlCarousel autoWidth loop className="owl-carousel custom-carousel owl-theme">
-        {games.map((game, index) => (
-          <GameItem
-            key={index}
-            title={game.title}
-            path={game.path}
-            imageUrl={game.imageUrl}
-            description={game.description}
-          />
-        ))}
-      </OwlCarousel>
-    </section>
-    <div className="bubbles bubble-1"></div>
-    <div className="bubbles bubble-2"></div>
-    <div className="bubbles bubble-3"></div>
-    <div className="bubbles bubble-4"></div>
-    
-    </div>
-  );
-}
+      <video className="background-video" autoPlay loop muted src="../../assets/videos/background-video.mp4"/>
+      <section className="game-section">
+      <div className="top">
+        <BackButton/>
+        <h1 className="buttontitle">Trending games</h1>
+      </div>
+        <OwlCarousel autoWidth loop className="owl-carousel custom-carousel owl-theme">
+          {games.map((game, index) => (
+            <GameItem
+              key={index}
+              title={game.title}
+              path={game.path}
+              imageUrl={game.imageUrl}
+              description={game.description}
+            />
+          ))}
+        </OwlCarousel>
+      </section>
+      <div className="bubbles bubble-1"></div>
+      <div className="bubbles bubble-2"></div>
+      <div className="bubbles bubble-3"></div>
+      <div className="bubbles bubble-4"></div>
+      </div>
+    );
+  }
 
 export default GameSelection;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Field from './components/field';
+import Field from '../components/field';
 import "./loginCss/login.css";
 import { useHistory } from 'react-router-dom'
 import navigateToRoute from '../utils/navigation';
@@ -13,7 +13,7 @@ function Login() {
 
 
   return (
-    <div className="main_container">
+    <div className="login_container">
         <div className="logintitle"> Welcome to Jolly Phonics</div>
         <div className="frame">
             {/* Action.php */}

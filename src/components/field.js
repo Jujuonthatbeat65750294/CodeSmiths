@@ -1,5 +1,4 @@
 import React from 'react';
-import "../loginCss/login.css";
 
 function Field({ type, id, name, placeholder}) {
 

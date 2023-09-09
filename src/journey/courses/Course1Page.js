@@ -36,6 +36,7 @@ function Course1Page() {
 
   return (
     <div id='course1-page-container'>
+      <video className="background-video" autoPlay loop muted src="../../../../assets/videos/background-video.mp4"/>
       <div className="header-bar">
         <BackButton />
         <h1>Learn to read and write with Jolly Phonics</h1>

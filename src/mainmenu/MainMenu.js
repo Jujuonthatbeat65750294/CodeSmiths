@@ -14,11 +14,13 @@ const MainMenu = ({children}) => {
             </div>
             <h2 className='maintitle'>Continue Journey</h2>
             <div className="continue-contents">
-                <div id="course1">
-                    <div>
-                        <img src="../../assets/img/courses/course_1/introduction.png"alt="Introduction" />
-                    </div>
-
+                <div id="continue-course">
+                    <Link to="/main-menu/journey/course1/practice_p_n">
+                        <div>
+                            <img src="../../assets/img/courses/course_1/practice.png"alt="Introduction" />
+                            <h2>Practice P and N</h2>
+                        </div>
+                    </Link>
                 </div>
             </div>
             <div className="bottom-nav">
