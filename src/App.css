@@ -286,6 +286,7 @@ video.background-video {
 }
 
 .play-button {
+  display: flex;
   position: absolute;
   top: 95%;
   left: 50%;
@@ -295,6 +296,13 @@ video.background-video {
   background-color: #ffbe3da9;
   border-radius: 50%;
   transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+.play-button img {
+  max-width: 40px;
+  height: 40px;
+  box-shadow: none;
 }
 .phase.unlock .play-button:hover {
   width: 82px;

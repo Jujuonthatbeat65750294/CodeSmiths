@@ -60,7 +60,7 @@ function Course1Page() {
                     onClick={() =>
                       handlePlayButtonClick(`/main-menu/journey/course1/${phase.content}`)
                     }
-                  ></div>
+                  ><img src="../../../../assets/img/play.png" /></div>
                 </div>
               ))}
             </div>

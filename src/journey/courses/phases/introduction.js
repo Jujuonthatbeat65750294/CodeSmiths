@@ -5,32 +5,6 @@ import AudioManager from '../../../utils/AudioManager';
 
 function IntroductionPage() {
   const history = useHistory();
-  const audioRef = useRef(null); // Define the audioRef using the useRef hook
-
-  useEffect(() => {
-    // Stop the audio playback when the component mounts
-    stopAudio();
-
-    // Clean up the effect when the component unmounts
-    return () => {
-      // Restart the audio playback when the component unmounts
-      playAudio();
-    };
-  }, []);
-
-  const stopAudio = () => {
-    // Logic to stop the audio playback
-    const audio = audioRef.current;
-    audio.pause();
-  };
-
-  const playAudio = () => {
-    // Logic to restart the audio playback
-    const audio = audioRef.current;
-    audio.play().catch(error => {
-      console.error('Failed to play audio:', error);
-    });
-  };
 
   const handleVideoEnd = () => {
     // Navigate to another path when the video ends

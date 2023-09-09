@@ -27,7 +27,7 @@ const AudioManager = ({ audioFile, volume }) => {
     };
   }, [audioFile, volume]);
 
-  return <audio ref={audioRef} />;
+  return null;
 };
 
 export default AudioManager;
