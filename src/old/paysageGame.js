@@ -3,6 +3,7 @@ import '../index.css'
 import Home from './Home';
 import Game from "./game";
 import './bubble2.css';
+import BackButton from "../components/BackButton";
 
 
 
@@ -58,7 +59,6 @@ const PaysageGame = () => {
   }, []);
   return (
 <div>
-
 <section id="blue" style={{ backgroundColor:'lightblue' }}>
 <svg
   className="fish fish1"
@@ -150,14 +150,15 @@ const PaysageGame = () => {
 
 <div id="gameBorder" style={{ backgroundColor:'lightblue',  }} ><Game>
   </Game></div>
+  
   <div className="bubbles bubble-1"></div>
           <div className="bubbles bubble-2"></div>
           <div className="bubbles bubble-3"></div>
           <div className="bubbles bubble-4"></div>
          
          
-   =
-          
+
+          <BackButton/>  
 
 </section>
 </div>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import './MainBubbles.css';
 const MainMenu = ({children}) => {
     return ( 
         <div className="main-menu-content">
@@ -48,6 +48,16 @@ const MainMenu = ({children}) => {
                     </Link>
                 </div>
             </div>
+            <div className="bubbles bubble-1"></div>
+          <div className="bubbles bubble-2"></div>
+          <div className="bubbles bubble-3"></div>
+          <div className="bubbles bubble-4"></div>
+          <div className="bubbles bubble-6"></div>
+          <div className="bubbles bubble-7"></div>
+          <div className="bubbles bubble-8"></div>
+          <div className="bubbles bubble-9"></div>
+          <div className="bubbles bubble-10"></div>
+        
         </div>
      );
 }

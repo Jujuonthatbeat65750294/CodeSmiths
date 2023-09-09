@@ -1,0 +1,90 @@
+
+  
+  /* Bubbles */
+  .bubbles {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    margin-right: 50px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    width: 40px;
+    height: 80px;
+    animation: up 4s finite ;
+  }
+  
+  .bubble-2 {
+    left: 350px;
+    animation: up 2s finite ;
+  }
+  
+  .bubble-3 {
+    left: 750px;
+    opacity: 0.3;
+    animation: up 5s finite;
+  }
+  
+  .bubble-4 {
+    left: 1150px;
+    animation: up 6s finite;
+  }
+  
+  .bubble-5 {
+    left: 50px;
+    animation: up 5s  finite;
+  }
+  
+  .bubble-6 {
+    left: 300px;
+    opacity: 0.3;
+    animation: up 3s finite;
+  }
+  
+  .bubble-7 {
+    left: 670px;
+    animation: up 4s finite ;
+  }
+  
+  .bubble-8 {
+    left: 1050px;
+    opacity: 0.3;
+    animation: up 3s Finite ;
+  }
+  .bubble-9 {
+    left: 570px;
+    animation: up 2s Fi;
+  }
+  
+  .bubble-10 {
+    left: 1000px;
+    opacity: 0.3;
+    animation: up 4s ;
+  }
+  
+  /* Swim Animation */
+  @keyframes swim {
+    0% {
+      transform: translateY(-50px) translateX(0) rotate(30deg);
+    }
+    25% {
+      transform: translateY(50px) translateX(250px) rotate(20deg);
+    }
+    50% {
+      transform: translateY(100px) translateX(500px);
+    }
+    75% {
+      transform: translateY(50px) translateX(850px) rotate(-20deg);
+    }
+    100% {
+      transform: translateY(-170px) translateX(1200px) rotate(-40deg);
+    }
+  }
+  
+  /* Bubbles Animation */
+  @keyframes up {
+    100% {
+      transform: translateY(-800px);
+    }
+  }
+  
