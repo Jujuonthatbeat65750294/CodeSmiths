@@ -5,9 +5,14 @@
       "sound": "ant.mp3"
     },
     {
-      "image": "apple.png",
-      "word": "apple",
-      "sound": "apple.mp3"
+      "image": "snake.png",
+      "word": "snake",
+      "sound": "snake.mp3"
+    },
+    {
+      "image": "shark.png",
+      "word": "shark",
+      "sound": "shark.mp3"
     },
     {
       "image": "act.png",

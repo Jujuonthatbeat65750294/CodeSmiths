@@ -66,6 +66,13 @@ function Guess_First_Letter({ groupLetters }) {
   // Game in progress
   return (
     <div className="gameGuessContainer">
+      <video autoPlay="autoplay" loop muted className="bg">
+        <source
+          src="https://static.vecteezy.com/system/resources/previews/003/439/678/mp4/cartoon-background-underwater-sea-life-free-video.mp4"
+          type="video/webm"
+        />
+        Your browser does not support the video tag.
+      </video>
       <BackButton />
       <div
         className="App-header"
@@ -77,9 +84,12 @@ function Guess_First_Letter({ groupLetters }) {
         }}
       >
         <AudioManager audioFile="../../../../assets/audio/background-music.mp3" volume={0.05} />
-        <p onClick={playAudio} style={{ textAlign: 'center' }}>
+        {/* <p onClick={playAudio} style={{ textAlign: 'center' }}>
           What is the first letter of this word?
-        </p>
+        </p> */}
+        <div className="title">
+          <img src="../../../../assets/img/What-is-the-first-letter-of-this-word.png" alt="" onClick={playAudio}/>
+        </div>
         <audio src="../../../../assets/audio/question.mp3" autoPlay />
 
         <img
